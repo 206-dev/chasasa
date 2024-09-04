@@ -1,0 +1,104 @@
+:root {
+    --shadow-color: rgba(0, 0, 0, 10);
+    --shadow-x: 0;
+    --shadow-y: 8px;
+    --shadow-blur: 20px;
+}
+
+.regionContainer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(65, 125, 209);
+}
+.map-item{
+	position: absolute;
+	height: 750px;
+	width: 440px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.map{
+	height: 750px;
+	width: 440px;
+	/* left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); */
+}
+.region-outBox{
+	position: absolute;
+	height: 168px;
+	width: 240px;
+}	
+.region-item{
+	display:none; 
+/* 	border: 2px solid #666161; */
+	border-radius: 10px;
+	background-color: rgb(243, 243, 243);
+	box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-color);
+	cursor: pointer;
+}
+.region-box{
+	width: 100%;
+	height: 100%;
+}
+.pin-item{
+	position: absolute;
+	width: 30px;
+	left: 50%;
+	transform: translate(-50%);
+	cursor: pointer;
+}
+.pin-top{
+	top : -30px;
+}
+.pin-bottom{
+	bottom : -30px;
+}
+.img-box{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+/* 	background-color: pink; */
+	border-radius: 10px 10px 0 0;
+	padding: 6px;
+	gap: 6px;
+}
+.region-img{
+	width: 110px;
+	height: 80px;
+	border-radius: 10px;
+/* 	margin: 0 auto; */
+}
+.explain-box{
+	width: 100%;
+/* 	background-color: olive; */
+	padding: 6px;
+	border-radius: 0 0 10px 10px;
+}
+.star{
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
+.inline-flex{
+	display: inline-flex;
+	align-items: center;
+}
+.busan{
+	right: -110px;
+	bottom: 118px;
+}
+.donghae{
+	top: 215px;
+	right: -95px; 
+}
+.jeju{
+	left:-118px;
+	bottom: 60px;
+}
+
+.ml-5{
+	margin-left: 5px;
+}

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1550px) {
+    .timeboard-Container {
+      display: block;
+      height: 600px;
+      width: 160px;
+      position: fixed;
+      top: 110px;
+      cursor: pointer;
+    }
+    .lee-right-20{
+      right : 20px;
+    }
+    .lee-left-20{
+      left : 20px;
+    }
+        
+    .pl-10{
+        padding-left: 10px;
+    }
+    .pr-10{
+        padding-right: 10px;
+    }
+    
+}
+@media screen and (max-width:1551px) {
+    .timeboard-Container {
+      display:none;
+    }
+   
+}
+  
+/* 타임보드 */
+.timeboard-Container{
+    height: 600px;
+    width: 160px;
+    position: fixed;
+    top:  110px;
+    cursor: pointer;
+    /* background-color: #928a8a; */ 
+}
+  
+.timeboard-Container img{
+    width: 100%;
+    max-width : 160px;
+    height: 100%;
+    max-height: 600px;
+}

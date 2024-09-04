@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.teamproject.www.kim.mapper.BoardLikeMapper">
+
+	<!-- 추천 추가 -->
+    <insert id="insertLike" parameterType="com.teamproject.www.kim.domain.BoardLikeDto">
+        INSERT INTO TBL_LIKE (LIKENO, BOARDNO, USERID)
+        VALUES (seq_like.nextval, #{boardNo}, #{userId})
+    </insert>
+
+    <!-- 추천 제거 -->
+    <delete id="deleteLike">
+        DELETE FROM TBL_LIKE
+        WHERE BOARDNO = #{boardNo} AND USERID = #{userId}
+    </delete>
+
+    <!-- 추천 여부 체크 -->
+    <select id="checkLikeExist" resultType="int">
+        SELECT COUNT(*) 
+        FROM TBL_LIKE
+        WHERE BOARDNO = #{boardNo} AND USERID = #{userId}
+    </select>
+
+    <!-- 추천수 조회 -->
+    <select id="selectLikeCount" resultType="int">
+        SELECT COUNT(*) 
+        FROM TBL_LIKE 
+        WHERE BOARDNO = #{boardNo}
+    </select>
+    
+    <!-- 좋아요 추가 시 게시글의 좋아요 수 증가 -->
+    <update id="incrementBoardLikeCount" parameterType="Long">
+        UPDATE TBL_BOARD
+        SET LIKES = LIKES + 1
+        WHERE BOARDNO = #{boardNo}
+    </update>
+
+    <!-- 좋아요 제거 시 게시글의 좋아요 수 감소 -->
+    <update id="decrementBoardLikeCount" parameterType="Long">
+        UPDATE TBL_BOARD
+        SET LIKES = LIKES - 1
+        WHERE BOARDNO = #{boardNo}
+    </update>
+    
+    
+    <!-- 게시글 번호로 컨텐츠 가져오기 -->
+	<select id="getContentByBoardNo" resultType="string">
+	    SELECT content
+	    FROM tbl_board
+	    WHERE boardno = #{boardNo}
+	</select>
+	
+	
+	
+	<!-- 유저의 특정 게시판 타입에 대한 선호도를 업데이트 -->
+    <update id="updatePreference" parameterType="com.teamproject.www.kim.domain.UserBoardTypePreferenceDto">
+        UPDATE TBL_INTERESTS_BOARD
+        SET PREFERENCE_COUNT = PREFERENCE_COUNT + 1
+        WHERE USERID = #{userId} AND BOARDTYPENO = #{boardTypeNo}
+    </update>
+
+    <!-- 유저의 특정 게시판 타입에 대한 선호도를 새로 추가 -->
+    <insert id="insertPreference" parameterType="com.teamproject.www.kim.domain.UserBoardTypePreferenceDto">
+        INSERT INTO TBL_INTERESTS_BOARD (USERID, BOARDTYPENO, PREFERENCE_COUNT)
+        VALUES (#{userId}, #{boardTypeNo}, 1)
+    </insert>
+
+    <!-- 유저가 특정 게시판 타입에 대한 선호도를 가지고 있는지 확인 -->
+    <select id="checkPreferenceExist" resultType="int" parameterType="com.teamproject.www.kim.domain.UserBoardTypePreferenceDto">
+        SELECT COUNT(*)
+        FROM TBL_INTERESTS_BOARD
+        WHERE USERID = #{userId} AND BOARDTYPENO = #{boardTypeNo}
+    </select>
+    
+    <!-- 게시글 번호로 게시판 타입 번호 가져오기 -->
+    <select id="getBoardTypeNoByBoardNo" resultType="int">
+        SELECT BOARDTYPENO
+        FROM TBL_BOARD
+        WHERE BOARDNO = #{boardNo}
+    </select>
+</mapper>

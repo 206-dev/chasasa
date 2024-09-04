@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable{ */
+/* 	border: none; */
+/* } */
+.ck.ck-editor__editable_inline{
+	border: none;
+}
+
+.ck-content .image img{
+	position: relative;
+	z-index: 2;
+}
+
+.ck-reset_all{
+	display: none;
+}
+
+.btn-container{
+	border-top: 1px solid gray;
+	padding-top: 1rem;
+}
+
+.disNone{
+	display: none;
+}
+
+.reply-delete-modal{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr ;
+	border: 1px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 0;
+	align-content: center;
+	background-color: white;
+	margin: 200px auto;
+}
+// 댓글 삭제 모달
+.reply-delete-title{
+	align-content: center;
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+.reply-delete-content{
+	font-size: 0.9rem;
+	padding : 0 10px;
+	color: gray;
+}
+.reply-delete-btn-box{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.reply-delete-btn{
+	width: 100%;
+	border: 1px solid lightgray;
+	font-size: 1.1rem;
+	cursor: pointer;
+	background-color: white;
+	color:gray;
+}
+.reply-delete-btn:hover{
+	color:black;
+}
+.reply-delete-btn-l{
+	border-radius: 0 0 0 10px;
+}
+.reply-delete-btn-r{
+	border-radius: 0 0 10px 0;
+}

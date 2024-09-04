@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.teamproject.www.kim.mapper.AttachMapper">
+	<insert id="insertKsy">
+    	insert into tbl_attach (fileno, boardno, uploadpath, uploaddate)
+    	values (seq_attach.nextval, #{boardNo}, #{uploadPath}, sysdate)
+	</insert>
+	
+	
+	<select id="getAttachListKsy" resultType="AttachBoardDto">
+		select * from tbl_attach
+		where boardNo = #{boardNo}
+	</select>
+	
+	<delete id="deleteKsy">
+		delete from tbl_attach
+		where boardNo = #{boardNo}
+	</delete>
+	
+	<select id="getOldAttachListKsy" resultType="AttachBoardDto">
+	    <![CDATA[
+	    SELECT * 
+	    FROM tbl_attach_info
+	    WHERE SUBSTR(uploadPath, LENGTH('E:/upload/') + 1) = TO_CHAR(SYSDATE - 1, 'YYYY/MM/DD')
+	    ]]>
+	</select>
+	
+<!-- 	<update id="updateBoardNoForNullFiles"> -->
+<!--         UPDATE tbl_attach -->
+<!--         SET boardno = #{boardno} -->
+<!--         WHERE boardno IS NULL -->
+<!--     </update> -->
+	
+</mapper>

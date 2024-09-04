@@ -1,0 +1,2004 @@
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 일출 을 감상 했습니다. 아침 식사 로는 신선한 해산물 로 만든 해물라면 을 먹고, 자전거 를 타고 해안가 를 달렸습니다.'
+WHERE BOARDNO = 1;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 둘러보았습니다. 저녁 으로는 숯불 에 구운 삼겹살 과 함께한 바비큐 파티 를 즐기고, 차박 을 위해 렉스턴 을 이용 했습니다.'
+WHERE BOARDNO = 2;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 공주 에서 캠핑 을 하며 역사적인 공주 성곽 을 탐방 했습니다. 점심 으로는 공주 알밤 으로 만든 밤밥 을 맛보고, 텐트 를 치기 위해 코베아 캠핑 장비 를 사용 했습니다.'
+WHERE BOARDNO = 3;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 해남 에서 캠핑 을 하며 땅끝마을 을 방문 했습니다. 저녁 식사 로는 신선한 회 와 해물파전 을 즐기고, 차량 으로는 스타리아 캠핑카 를 사용 했습니다.'
+WHERE BOARDNO = 4;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 남산 에서 도심 속 캠핑 을 체험 하며 야경 을 감상 했습니다. 간식 으로는 치맥 을 즐기며 즐거운 시간 을 보냈고, 자전거 를 이용해 서울 시내 를 둘러보았습니다.'
+WHERE BOARDNO = 5;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 한려해상 국립공원 의 아름다운 풍경 을 감상 했습니다. 점심 으로는 통영 충무김밥 을 먹고, 캠핑용 의자 와 테이블 은 헬리녹스 를 사용 했습니다.'
+WHERE BOARDNO = 6;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 방문 했습니다. 저녁 으로는 평창 한우 로 만든 스테이크 를 맛보았으며, 코란도 투리스모 차량 을 이용 했습니다.'
+WHERE BOARDNO = 7;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 연천 에서 캠핑 을 하며 임진강 에서 낚시 를 즐겼습니다. 직접 잡은 물고기 로 매운탕 을 끓여 먹고, 캠핑 에 사용 한 화로대 는 스노우피크 제품 입니다.'
+WHERE BOARDNO = 8;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 우도 에서 캠핑 을 하며 검멀레 해변 의 절경 을 감상 했습니다. 아침 식사 로는 제주산 전복죽 을 먹고, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 9;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 보령 에서 캠핑 을 하며 머드축제 에 참여 했습니다. 저녁 으로는 바지락 칼국수 를 즐겼으며, 캠핑 장비 로는 버팔로 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 10;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 철원 에서 캠핑 을 하며 고석정 의 아름다운 경치 를 감상 했습니다. 점심 으로는 철원 오대쌀 로 지은 밥 과 함께한 산채비빔밥 을 먹었습니다.'
+WHERE BOARDNO = 11;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 남양주 에서 캠핑 을 하며 북한강 에서 카약 을 즐겼습니다. 저녁 으로는 닭갈비 를 구워 먹었고, 자전거 를 이용해 북한강 을 따라 달렸습니다.'
+WHERE BOARDNO = 12;
+
+UPDATE TBL_BOARD
+SET CONTENT = '부산 송정 에서 캠핑 을 하며 해변 에서 서핑 을 배웠습니다. 점심 으로는 부산 어묵 과 밀면 을 맛보았고, 차량 으로는 스타렉스 캠핑카 를 이용 했습니다.'
+WHERE BOARDNO = 13;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울진 에서 캠핑 을 하며 성류굴 을 탐험 했습니다. 저녁 식사 로는 울진 대게 를 즐겼으며, 캠핑 장비 로는 헬리녹스 의 의자 를 사용 했습니다.'
+WHERE BOARDNO = 14;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 예당호 에서 자전거 를 탔습니다. 간식 으로는 예산 사과 로 만든 사과파이 를 먹었습니다.'
+WHERE BOARDNO = 15;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 남원 에서 캠핑 을 하며 광한루원 을 방문 했습니다. 저녁 으로는 남원 추어탕 을 맛보았고, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 16;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 를 둘러보았습니다. 점심 으로는 장단콩 으로 만든 두부 요리 를 먹었고, 자전거 를 타고 평화누리 를 탐험 했습니다.'
+WHERE BOARDNO = 17;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 저녁 으로는 춘천 닭갈비 와 막국수 를 즐겼으며, 캠핑 장비 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 18;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 평택 에서 캠핑 을 하며 평택항 에서 유람선 을 탔습니다. 저녁 식사 로는 평택 한우 로 만든 불고기 를 먹었고, 캠핑 도구 로는 헬리녹스 의 의자 를 사용 했습니다.'
+WHERE BOARDNO = 19;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 영광 에서 캠핑 을 하며 백수해안도로 를 드라이브 했습니다. 점심 으로는 영광 굴비정식 을 맛보았으며, 차량 으로는 렉스턴 을 이용 했습니다.'
+WHERE BOARDNO = 20;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 와 석굴암 을 탐방 했습니다. 저녁 으로는 경주 황남빵 과 함께한 간단한 식사 를 했으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 21;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 고양 에서 캠핑 을 하며 호수공원 에서 피크닉 을 즐겼습니다. 점심 으로는 김밥 과 과일 을 먹었고, 자전거 를 타고 공원 을 돌아다녔습니다.'
+WHERE BOARDNO = 22;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 영랑호 에서 보트 체험 을 했습니다. 저녁 식사 로는 속초 아바이순대 를 맛보았으며, 캠핑 장비 로는 스노우피크 를 사용 했습니다.'
+WHERE BOARDNO = 23;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 간월암 의 일몰 을 감상 했습니다. 점심 으로는 서산 어리굴젓 과 보리밥 을 먹었고, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 24;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 완도 에서 캠핑 을 하며 완도해조류박람회 를 관람 했습니다. 저녁 으로는 신선한 해초 비빔밥 을 즐겼으며, 캠핑 장비 로는 헬리녹스 의 테이블 을 사용 했습니다.'
+WHERE BOARDNO = 25;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 마산 에서 캠핑 을 하며 돝섬 유원지 를 방문 했습니다. 점심 으로는 마산 아귀찜 을 먹었고, 차량 으로는 렉스턴 을 이용 했습니다.'
+WHERE BOARDNO = 26;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 성산일출봉 에서 캠핑 을 하며 장엄한 일출 을 보았습니다. 아침 식사 로는 제주 흑돼지 김치찌개 를 끓여 먹었으며, 캠핑 도구 로는 코베아 의 버너 를 사용 했습니다.'
+WHERE BOARDNO = 27;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 청남대 를 방문 했습니다. 점심 으로는 청주산 쌀 을 사용 한 비빔밥 을 먹었고, 캠핑 장비 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 28;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 자작나무 숲 을 탐험 했습니다. 저녁 식사 로는 강원도 감자전 을 먹었으며, 자전거 를 타고 숲길 을 달렸습니다.'
+WHERE BOARDNO = 29;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 둘러보았습니다. 점심 으로는 순천 꼬막정식 을 맛보았고, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 30;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 광주 에서 캠핑 을 하며 남한산성 을 탐방 했습니다. 저녁 으로는 경기미 로 지은 밥 과 함께한 고등어 구이 를 먹었으며, 캠핑 도구 로는 버팔로 의 코펠 을 사용 했습니다.'
+WHERE BOARDNO = 31;
+
+UPDATE TBL_BOARD
+SET CONTENT = '부산 광안리 에서 캠핑 을 하며 해변 에서 불꽃놀이 를 감상 했습니다. 간식 으로는 부산 어묵 꼬치 를 즐겼으며, 자전거 를 타고 광안대교 를 구경 했습니다.'
+WHERE BOARDNO = 32;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 동굴 탐험 을 즐겼습니다. 점심 으로는 삼척 황태구이 를 맛보았고, 캠핑 장비 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 33;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 천안 에서 캠핑 을 하며 독립기념관 을 방문 했습니다. 저녁 으로는 천안 호두과자 와 함께한 식사 를 즐겼으며, 자전거 를 타고 기념관 을 둘러보았습니다.'
+WHERE BOARDNO = 34;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 에서 해변 산책 을 했습니다. 점심 으로는 포항 물회 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 35;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 구경 했습니다. 저녁 으로는 여수 게장백반 을 맛보았고, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 36;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 한라산 에서 캠핑 을 하며 한라산 등반 을 했습니다. 아침 식사 로는 제주 오름샌드위치 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 37;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 이천 에서 캠핑 을 하며 도자기 마을 을 둘러보았습니다. 점심 으로는 이천 쌀밥 을 먹었으며, 자전거 를 타고 마을 을 돌아다녔습니다.'
+WHERE BOARDNO = 38;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 엑스포 과학공원 을 방문 했습니다. 저녁 으로는 대전 칼국수 와 함께한 식사 를 즐겼으며, 캠핑 장비 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 39;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 탐방 했습니다. 점심 으로는 홍천 찰옥수수 를 먹었으며, 캠핑 도구 로는 버팔로 의 코펠 을 사용 했습니다.'
+WHERE BOARDNO = 40;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었고, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 41;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 5.18 기념공원 을 방문 했습니다. 저녁 으로는 광주 무등산 보리밥 을 즐겼으며, 자전거 를 타고 공원 을 산책 했습니다.'
+WHERE BOARDNO = 42;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었고, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 43;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 저녁 으로는 양평 참나물 로 만든 샐러드 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 44;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 무주 에서 캠핑 을 하며 덕유산 을 등반 했습니다. 점심 으로는 무주 머루 와인을 즐겼고, 캠핑 도구 로는 헬리녹스 의 테이블 을 사용 했습니다.'
+WHERE BOARDNO = 45;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 간절곶 에서 일출 을 감상 했습니다. 저녁 으로는 울산 고래고기 를 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 46;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 단양 에서 캠핑 을 하며 도담삼봉 을 탐방 했습니다. 점심 으로는 단양 마늘 떡갈비 를 먹었고, 자전거 를 타고 주변 을 돌아보았습니다.'
+WHERE BOARDNO = 47;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 환선굴 을 탐험 했습니다. 저녁 으로는 삼척 황태해장국 을 즐겼으며, 캠핑 장비 로는 헬리녹스 의 의자 를 사용 했습니다.'
+WHERE BOARDNO = 48;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 이천 에서 캠핑 을 하며 이천 도자기 마을 을 탐방 했습니다. 점심 으로는 이천 쌀밥 을 먹었으며, 자전거 를 타고 도자기 마을 을 둘러보았습니다.'
+WHERE BOARDNO = 49;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 방문 했습니다. 저녁 으로는 순천 꼬막정식 을 맛보았고, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 50;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 거제 에서 캠핑 을 하며 바람의 언덕 을 탐방 했습니다. 점심 으로는 거제 멍게 비빔밥 을 먹었고, 자전거 를 타고 언덕 을 오르내렸습니다.'
+WHERE BOARDNO = 51;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 꽃지 해수욕장 에서 낙조 를 감상 했습니다. 저녁 으로는 태안 우럭젓국 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 52;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 방문 했습니다. 점심 으로는 평창 한우 스테이크 를 즐겼으며, 캠핑 장비 로는 스노우피크 의 의자 를 사용 했습니다.'
+WHERE BOARDNO = 53;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 진주 에서 캠핑 을 하며 진주성 을 탐방 했습니다. 저녁 으로는 진주 비빔밥 을 맛보았고, 자전거 를 타고 성곽 을 돌아보았습니다.'
+WHERE BOARDNO = 54;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 점심 으로는 담양 죽순밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 55;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 중문 에서 캠핑 을 하며 중문 해수욕장 에서 해수욕 을 즐겼습니다. 저녁 으로는 제주 은갈치 조림 을 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 56;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 상당산성 을 등반 했습니다. 점심 으로는 청주 올갱이국 을 맛보았고, 자전거 를 타고 산성 주변 을 탐방 했습니다.'
+WHERE BOARDNO = 57;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 은행나무숲 을 산책 했습니다. 저녁 으로는 홍천 찰옥수수 를 간식 으로 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 58;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 평택 에서 캠핑 을 하며 평택항 에서 해양 레저 를 즐겼습니다. 점심 으로는 평택 한우 스테이크 를 먹었고, 자전거 를 타고 항구 를 돌아보았습니다.'
+WHERE BOARDNO = 59;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 영광 에서 캠핑 을 하며 백수해안도로 를 드라이브 했습니다. 저녁 으로는 영광 굴비정식 을 맛보았고, 캠핑 도구 로는 버팔로 의 코펠 을 사용 했습니다.'
+WHERE BOARDNO = 60;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 통영대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 통영 굴전 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 의자 를 사용 했습니다.'
+WHERE BOARDNO = 61;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 보령 에서 캠핑 을 하며 무창포 해수욕장 에서 해양 스포츠 를 즐겼습니다. 저녁 으로는 보령 어리굴젓 을 곁들인 밥 을 먹었고, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 62;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 강릉 에서 캠핑 을 하며 경포호 를 산책 했습니다. 점심 으로는 강릉 초당두부 를 맛보았으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 63;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 저녁 으로는 군산 오징어덮밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 64;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 안성 에서 캠핑 을 하며 안성맞춤랜드 를 방문 했습니다. 점심 으로는 안성 쌀밥 을 먹었고, 자전거 를 타고 공원 을 돌아보았습니다.'
+WHERE BOARDNO = 65;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 성산포 에서 캠핑 을 하며 성산일출봉 을 등반 했습니다. 아침 식사 로는 제주 은갈치 구이 를 먹었으며, 캠핑 장비 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 66;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 한우 를 사용 한 불고기 를 먹었고, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 67;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 용평 리조트 에서 스키 를 즐겼습니다. 저녁 으로는 평창 한우 스테이크 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 68;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 점심 으로는 가평 잣국수 를 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 69;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 나주 에서 캠핑 을 하며 나주읍성 을 탐방 했습니다. 저녁 으로는 나주 곰탕 을 먹었으며, 자전거 를 타고 읍성 주변 을 돌아다녔습니다.'
+WHERE BOARDNO = 70;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울진 에서 캠핑 을 하며 불영사 계곡 에서 물놀이 를 즐겼습니다. 점심 으로는 울진 대게 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 71;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 충청북도 자연학습원 을 방문 했습니다. 저녁 으로는 청주 올갱이 국밥 을 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 72;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 원주 에서 캠핑 을 하며 치악산 을 등반 했습니다. 점심 으로는 원주 닭강정 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 73;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 평택 에서 캠핑 을 하며 평택호 를 드라이브 했습니다. 저녁 으로는 평택 한우 스테이크 를 먹었으며, 자전거 를 타고 호수 주변 을 산책 했습니다.'
+WHERE BOARDNO = 74;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 점심 으로는 고흥 바지락 칼국수 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 75;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 76;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 방문 했습니다. 점심 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 자전거 를 타고 온천 주변 을 돌아다녔습니다.'
+WHERE BOARDNO = 77;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 설악산 을 등반 했습니다. 저녁 으로는 속초 아바이순대 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 78;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 즐겼습니다. 점심 으로는 양평 해장국 을 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 79;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 무주 에서 캠핑 을 하며 무주 구천동 계곡 을 산책 했습니다. 저녁 으로는 무주 머루 와인을 마셨으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 80;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 병산서원 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 81;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 꽃지 해수욕장 에서 낙조 를 감상 했습니다. 저녁 으로는 태안 바지락 칼국수 를 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 82;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 철원 에서 캠핑 을 하며 고석정 을 탐방 했습니다. 점심 으로는 철원 오대쌀 로 만든 밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 83;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 84;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 청평호 에서 보트 를 탔습니다. 점심 으로는 가평 잣죽 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 85;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 에서 바다 를 감상 했습니다. 저녁 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 86;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 청남대 를 둘러보았습니다. 점심 으로는 청주 올갱이 국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 87;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 방문 했습니다. 저녁 으로는 양양 송이버섯 밥 을 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 88;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 견학 했습니다. 점심 으로는 고흥 김밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 89;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 물안개 를 감상 했습니다. 저녁 으로는 양평 한우 불고기 를 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 90;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 단양 에서 캠핑 을 하며 도담삼봉 을 탐방 했습니다. 점심 으로는 단양 마늘 떡갈비 를 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 91;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 진해 해수욕장 을 둘러보았습니다. 저녁 으로는 창원 아귀찜 을 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 92;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 점심 으로는 담양 죽순밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 93;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 강릉 에서 캠핑 을 하며 경포호 를 산책 했습니다. 저녁 으로는 강릉 초당두부 를 맛보았으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 94;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 95;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 를 방문 했습니다. 저녁 으로는 경주 황남빵 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 96;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 철원 에서 캠핑 을 하며 고석정 을 탐방 했습니다. 점심 으로는 철원 오대쌀 밥 을 먹었으며, 자전거 를 타고 고석정 주변 을 돌아다녔습니다.'
+WHERE BOARDNO = 97;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 98;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 간절곶 을 방문 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 99;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 한라산 에서 캠핑 을 하며 백록담 을 등반 했습니다. 저녁 으로는 제주 흑돼지 바비큐 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 100;
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 점심 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 101;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 저녁 으로는 대구 막창 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 102;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 오동도 를 탐방 했습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 103;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 천안 에서 캠핑 을 하며 독립기념관 을 방문 했습니다. 저녁 으로는 천안 호두과자 를 간식 으로 즐겼으며, 자전거 를 타고 기념관 주변 을 돌아보았습니다.'
+WHERE BOARDNO = 104;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 점심 으로는 양양 송이버섯 밥 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 105;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 안산 에서 캠핑 을 하며 대부도 를 드라이브 했습니다. 저녁 으로는 안산 생선구이 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 106;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 완도 에서 캠핑 을 하며 완도 해조류박람회 를 관람 했습니다. 점심 으로는 완도 김밥 을 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 107;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 108;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 109;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 탐방 했습니다. 저녁 으로는 홍천 찰옥수수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 110;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 진주 에서 캠핑 을 하며 진주성 을 둘러보았습니다. 점심 으로는 진주 비빔밥 을 먹었으며, 자전거 를 타고 성곽 을 돌아다녔습니다.'
+WHERE BOARDNO = 111;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 보령 에서 캠핑 을 하며 보령 머드축제 에 참여 했습니다. 저녁 으로는 보령 어리굴젓 을 곁들인 밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 112;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 방문 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 113;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 용인 에서 캠핑 을 하며 에버랜드 를 방문 했습니다. 저녁 으로는 용인 곤드레밥 을 먹었으며, 자전거 를 타고 에버랜드 주변 을 산책 했습니다.'
+WHERE BOARDNO = 114;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 목장 을 탐방 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 115;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 둘러보았습니다. 저녁 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 116;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 117;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 탐방 했습니다. 저녁 으로는 홍천 찰옥수수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 118;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 진주 에서 캠핑 을 하며 진주성 을 둘러보았습니다. 점심 으로는 진주 비빔밥 을 먹었으며, 자전거 를 타고 성곽 을 돌아다녔습니다.'
+WHERE BOARDNO = 119;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 보령 에서 캠핑 을 하며 보령 머드축제 에 참여 했습니다. 저녁 으로는 보령 어리굴젓 을 곁들인 밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 120;
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 점심 으로는 담양 떡갈비 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 121;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 거제 에서 캠핑 을 하며 바람의 언덕 을 둘러보았습니다. 저녁 으로는 거제 멍게 비빔밥 을 먹었으며, 자전거 를 타고 언덕 을 오르내렸습니다.'
+WHERE BOARDNO = 122;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 공주 에서 캠핑 을 하며 무령왕릉 을 탐방 했습니다. 점심 으로는 공주 밤밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 123;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 강릉 에서 캠핑 을 하며 안목 해변 을 산책 했습니다. 저녁 으로는 강릉 커피 거리 에서 커피 를 즐기며 휴식 을 취했습니다.'
+WHERE BOARDNO = 124;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 연천 에서 캠핑 을 하며 연천 세계캠핑체험장을 방문 했습니다. 점심 으로는 연천 두부 요리 를 먹었으며, 자전거 를 타고 캠핑장을 탐방 했습니다.'
+WHERE BOARDNO = 125;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 테이블 을 사용 했습니다.'
+WHERE BOARDNO = 126;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 동피랑 벽화마을 을 둘러보았습니다. 점심 으로는 통영 충무김밥 을 먹었으며, 자전거 를 타고 마을 을 돌아다녔습니다.'
+WHERE BOARDNO = 127;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 단양 에서 캠핑 을 하며 도담삼봉 을 탐방 했습니다. 저녁 으로는 단양 마늘 떡갈비 를 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 128;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 자작나무 숲 을 탐방 했습니다. 점심 으로는 인제 황태국 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 129;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 130;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 131;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 132;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 점심 으로는 양양 송이버섯 밥 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 133;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 청평호 에서 보트 를 탔습니다. 저녁 으로는 가평 잣죽 을 먹었으며, 자전거 를 타고 호수 주변 을 탐방 했습니다.'
+WHERE BOARDNO = 134;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 점심 으로는 담양 떡갈비 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 135;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 거제 에서 캠핑 을 하며 바람의 언덕 을 둘러보았습니다. 저녁 으로는 거제 멍게 비빔밥 을 먹었으며, 자전거 를 타고 언덕 을 오르내렸습니다.'
+WHERE BOARDNO = 136;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 공주 에서 캠핑 을 하며 무령왕릉 을 탐방 했습니다. 점심 으로는 공주 밤밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 137;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 강릉 에서 캠핑 을 하며 안목 해변 을 산책 했습니다. 저녁 으로는 강릉 커피 거리 에서 커피 를 즐기며 휴식 을 취했습니다.'
+WHERE BOARDNO = 138;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 연천 에서 캠핑 을 하며 연천 세계캠핑체험장을 방문 했습니다. 점심 으로는 연천 두부 요리 를 먹었으며, 자전거 를 타고 캠핑장을 탐방 했습니다.'
+WHERE BOARDNO = 139;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 테이블 을 사용 했습니다.'
+WHERE BOARDNO = 140;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 141;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 천리포 수목원 을 방문 했습니다. 저녁 으로는 태안 우럭젓국 을 먹었으며, 자전거 를 타고 수목원 을 산책 했습니다.'
+WHERE BOARDNO = 142;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 설악산 을 등반 했습니다. 점심 으로는 속초 아바이순대 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 143;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 탐방 했습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 144;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 공원 을 둘러보았습니다. 점심 으로는 파주 장단콩 으로 만든 두부 요리 를 먹었으며, 자전거 를 타고 공원 을 탐방 했습니다.'
+WHERE BOARDNO = 145;
+
+UPDATE TBL_BOARD
+SET CONTENT = '제주도 우도 에서 캠핑 을 하며 검멀레 해변 을 산책 했습니다. 저녁 으로는 제주 은갈치 구이 를 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 146;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 점심 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 탐방 했습니다.'
+WHERE BOARDNO = 147;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 저녁 으로는 인제 황태구이 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 148;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울진 에서 캠핑 을 하며 불영사 계곡 을 탐방 했습니다. 점심 으로는 울진 대게 를 먹었으며, 자전거 를 타고 계곡 을 산책 했습니다.'
+WHERE BOARDNO = 149;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 150;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 점심 으로는 양평 해장국 을 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 151;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 간월암 의 일몰 을 감상 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 152;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 철원 에서 캠핑 을 하며 고석정 을 탐방 했습니다. 점심 으로는 철원 오대쌀 로 만든 밥 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 153;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 저녁 으로는 담양 죽순밥 을 먹었으며, 자전거 를 타고 길 을 따라 달렸습니다.'
+WHERE BOARDNO = 154;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 둘러보았습니다. 점심 으로는 포항 물회 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 155;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 방문 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 자전거 를 타고 온천 주변 을 산책 했습니다.'
+WHERE BOARDNO = 156;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 환선굴 을 탐험 했습니다. 점심 으로는 삼척 황태구이 를 먹었으며, 자전거 를 타고 해안가 를 탐방 했습니다.'
+WHERE BOARDNO = 157;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 진주 에서 캠핑 을 하며 진주성 을 탐방 했습니다. 저녁 으로는 진주 비빔밥 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 테이블 을 사용 했습니다.'
+WHERE BOARDNO = 158;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 159;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 저녁 으로는 양양 송이버섯 밥 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 160;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 간절곶 에서 일출 을 감상 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 161;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 엑스포 과학공원 을 방문 했습니다. 저녁 으로는 대전 칼국수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 162;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 점심 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 163;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 탐방 했습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 164;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 용인 에서 캠핑 을 하며 에버랜드 를 방문 했습니다. 점심 으로는 용인 곤드레밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 165;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 166;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 방문 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 167;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 바다 를 산책 했습니다.'
+WHERE BOARDNO = 168;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 점심 으로는 담양 죽순밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 169;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 를 탐방 했습니다. 저녁 으로는 경주 황남빵 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 170;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 점심 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 자전거 를 타고 온천 주변 을 산책 했습니다.'
+WHERE BOARDNO = 171;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 저녁 으로는 속초 닭강정 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 172;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 점심 으로는 광주 무등산 보리밥 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 173;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 저녁 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 174;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 천안 에서 캠핑 을 하며 독립기념관 을 방문 했습니다. 점심 으로는 천안 호두과자 를 간식 으로 먹었으며, 자전거 를 타고 기념관 을 탐방 했습니다.'
+WHERE BOARDNO = 175;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 산책 했습니다. 저녁 으로는 홍천 찰옥수수 를 간식 으로 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 176;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 177;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울진 에서 캠핑 을 하며 불영사 계곡 을 탐방 했습니다. 저녁 으로는 울진 대게 를 먹었으며, 자전거 를 타고 계곡 을 산책 했습니다.'
+WHERE BOARDNO = 178;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 상당산성 을 등반 했습니다. 점심 으로는 청주 올갱이 국 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 179;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 동굴 탐험 을 즐겼습니다. 저녁 으로는 삼척 황태구이 를 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 180;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 181;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 점심 으로는 담양 떡갈비 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 182;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 저녁 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 183;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 공원 을 둘러보았습니다. 점심 으로는 파주 장단콩 으로 만든 두부 요리 를 먹었으며, 자전거 를 타고 공원 을 탐방 했습니다.'
+WHERE BOARDNO = 184;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 저녁 으로는 고흥 바지락 칼국수 를 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 185;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 186;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 저녁 으로는 대전 칼국수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 187;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 설악산 을 등반 했습니다. 점심 으로는 속초 아바이순대 를 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 188;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 189;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 점심 으로는 양평 해장국 을 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 190;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 간절곶 에서 일출 을 감상 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 191;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 192;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 193;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 194;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 바다 를 산책 했습니다.'
+WHERE BOARDNO = 195;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 저녁 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 196;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 공원 을 둘러보았습니다. 점심 으로는 파주 장단콩 으로 만든 두부 요리 를 먹었으며, 자전거 를 타고 공원 을 탐방 했습니다.'
+WHERE BOARDNO = 197;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 저녁 으로는 고흥 바지락 칼국수 를 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 198;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 199;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 저녁 으로는 대전 칼국수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 200;
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 점심 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 201;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 저녁 으로는 안동 찜닭 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 202;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 점심 으로는 담양 떡갈비 를 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 203;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 천리포 수목원 을 탐방 했습니다. 저녁 으로는 태안 우럭젓국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 204;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 방문 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 205;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 동피랑 벽화마을 을 탐방 했습니다. 저녁 으로는 통영 충무김밥 을 먹었으며, 캠핑카 로는 쏠라티 를 이용 했습니다.'
+WHERE BOARDNO = 206;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 207;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 천안 에서 캠핑 을 하며 독립기념관 을 탐방 했습니다. 저녁 으로는 천안 호두과자 를 간식 으로 먹었으며, 자전거 를 타고 기념관 을 산책 했습니다.'
+WHERE BOARDNO = 208;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 점심 으로는 양양 송이버섯 밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 209;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울진 에서 캠핑 을 하며 불영사 계곡 을 탐방 했습니다. 저녁 으로는 울진 대게 를 먹었으며, 자전거 를 타고 계곡 주변 을 산책 했습니다.'
+WHERE BOARDNO = 210;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 211;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 저녁 으로는 양평 해장국 을 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 212;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 213;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 214;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 둘러보았습니다. 점심 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 215;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 216;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 점심 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 217;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 동굴 탐험 을 즐겼습니다. 저녁 으로는 삼척 황태구이 를 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 218;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 단양 에서 캠핑 을 하며 도담삼봉 을 탐방 했습니다. 점심 으로는 단양 마늘 떡갈비 를 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 219;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 탐방 했습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 220;
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 점심 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 221;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 통영대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 통영 굴국밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 222;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 공주 에서 캠핑 을 하며 공주 금강 을 따라 산책 했습니다. 점심 으로는 공주 알밤 으로 만든 밤밥 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 223;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 224;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 안산 에서 캠핑 을 하며 대부도 를 둘러보았습니다. 점심 으로는 안산 꽃게 찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 225;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 저녁 으로는 양양 산채비빔밥 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 226;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 태화강 국가정원 을 산책 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 227;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 천리포 수목원 을 방문 했습니다. 저녁 으로는 태안 우럭젓국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 228;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 점심 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 229;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 산책 했습니다. 저녁 으로는 포항 물회 를 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 230;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 자작나무 숲 을 탐방 했습니다. 점심 으로는 인제 황태국 을 먹었으며, 캠핑카 로는 스타렉스 를 이용 했습니다.'
+WHERE BOARDNO = 231;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 232;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 점심 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 233;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 저녁 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 234;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 점심 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 235;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 저녁 으로는 대구 막창 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 236;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 237;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 설악산 을 등반 했습니다. 저녁 으로는 속초 아바이순대 를 먹었으며, 자전거 를 타고 산 을 따라 달렸습니다.'
+WHERE BOARDNO = 238;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 239;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 저녁 으로는 양평 해장국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 240;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 태화강 국가정원 을 산책 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 241;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 242;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 점심 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 243;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 244;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 용인 에서 캠핑 을 하며 에버랜드 를 방문 했습니다. 점심 으로는 용인 곤드레밥 을 먹었으며, 자전거 를 타고 놀이공원 을 둘러보았습니다.'
+WHERE BOARDNO = 245;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 양양 에서 캠핑 을 하며 낙산사 를 탐방 했습니다. 저녁 으로는 양양 산채비빔밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 246;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 산책 했습니다. 점심 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 따라 달렸습니다.'
+WHERE BOARDNO = 247;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 248;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 점심 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 둘러보았습니다.'
+WHERE BOARDNO = 249;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 저녁 으로는 인제 황태구이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 250;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 251;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 252;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 공주 에서 캠핑 을 하며 공주 금강 을 따라 산책 했습니다. 점심 으로는 공주 알밤 으로 만든 밤밥 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 253;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 저녁 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 254;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 점심 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 255;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 를 탐방 했습니다. 저녁 으로는 경주 황남빵 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 256;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 257;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 저녁 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 258;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 점심 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 259;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 저녁 으로는 안동 찜닭 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 260;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 동피랑 벽화마을 을 탐방 했습니다. 저녁 으로는 통영 충무김밥 을 먹었으며, 자전거 를 타고 마을 을 돌아다녔습니다.'
+WHERE BOARDNO = 261;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 점심 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 262;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 263;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 연천 에서 캠핑 을 하며 연천 세계캠핑체험장을 방문 했습니다. 점심 으로는 연천 두부 요리 를 먹었으며, 자전거 를 타고 캠핑장을 탐방 했습니다.'
+WHERE BOARDNO = 264;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 265;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 캠핑 도구 로는 스노우피크 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 266;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 267;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 점심 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 268;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 269;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 저녁 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 270;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 탐방 했습니다. 점심 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 271;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 탐방 했습니다. 저녁 으로는 홍천 찰옥수수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 272;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 둘러보았습니다. 점심 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 산책 했습니다.'
+WHERE BOARDNO = 273;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 274;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 275;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 276;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 점심 으로는 광주 무등산 보리밥 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 277;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 저녁 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 278;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 천리포 수목원 을 탐방 했습니다. 점심 으로는 태안 우럭젓국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 279;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 동굴 탐험 을 즐겼습니다. 저녁 으로는 삼척 황태구이 를 먹었으며, 자전거 를 타고 해안가 를 산책 했습니다.'
+WHERE BOARDNO = 280;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 281;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 282;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 점심 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 283;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 통영 에서 캠핑 을 하며 통영대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 통영 굴국밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 284;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 태안 에서 캠핑 을 하며 천리포 수목원 을 탐방 했습니다. 점심 으로는 태안 우럭젓국 을 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 285;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 저녁 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 286;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 공원 을 둘러보았습니다. 점심 으로는 파주 장단콩 으로 만든 두부 요리 를 먹었으며, 자전거 를 타고 공원 을 탐방 했습니다.'
+WHERE BOARDNO = 287;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 저녁 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 288;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 289;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 저녁 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 탐방 했습니다.'
+WHERE BOARDNO = 290;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 점심 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 291;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 292;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 를 탐방 했습니다. 점심 으로는 경주 황남빵 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 293;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 294;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 295;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 296;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 297;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 자전거 를 타고 온천 주변 을 산책 했습니다.'
+WHERE BOARDNO = 298;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 299;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 300;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었으며, 자전거 를 타고 마을 주변 을 산책 했습니다.'
+WHERE BOARDNO = 301;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 달렸습니다.'
+WHERE BOARDNO = 302;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 점심 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 303;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 파주 에서 캠핑 을 하며 임진각 평화누리 공원 을 둘러보았습니다. 저녁 으로는 파주 장단콩 으로 만든 두부 요리 를 먹었으며, 자전거 를 타고 공원 을 탐방 했습니다.'
+WHERE BOARDNO = 304;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 점심 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 305;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 저녁 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 따라 올라갔습니다.'
+WHERE BOARDNO = 306;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 방문 했습니다. 점심 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 탐방 했습니다.'
+WHERE BOARDNO = 307;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 설악산 을 등반 했습니다. 저녁 으로는 속초 아바이순대 를 먹었으며, 자전거 를 타고 산 을 따라 달렸습니다.'
+WHERE BOARDNO = 308;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 309;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 양평 에서 캠핑 을 하며 두물머리 에서 사진 촬영 을 했습니다. 저녁 으로는 양평 해장국 을 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 310;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 간절곶 에서 일출 을 감상 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 311;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 312;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 313;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 저녁 으로는 광주 무등산 보리밥 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 314;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 315;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 저녁 으로는 담양 떡갈비 를 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 316;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 탐방 했습니다. 점심 으로는 안동 찜닭 을 먹었으며, 자전거 를 타고 마을 주변 을 산책 했습니다.'
+WHERE BOARDNO = 317;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 318;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 319;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 320;
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 산책 했습니다. 저녁 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 따라 달렸습니다.'
+WHERE BOARDNO = 321;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 탐방 했습니다. 점심 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 둘러보았습니다.'
+WHERE BOARDNO = 322;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 저녁 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 323;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 점심 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 324;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 태화강 국가정원 을 산책 했습니다. 저녁 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 325;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 점심 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 326;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 저녁 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 327;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 328;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 329;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 330;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 저녁 으로는 인제 황태구이 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 331;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 광주 에서 캠핑 을 하며 무등산 을 등반 했습니다. 점심 으로는 광주 무등산 보리밥 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 332;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경주 에서 캠핑 을 하며 불국사 를 탐방 했습니다. 저녁 으로는 경주 황남빵 을 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 333;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 천안 에서 캠핑 을 하며 독립기념관 을 탐방 했습니다. 점심 으로는 천안 호두과자 를 간식 으로 먹었으며, 자전거 를 타고 기념관 을 산책 했습니다.'
+WHERE BOARDNO = 334;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 홍천 에서 캠핑 을 하며 무궁화 수목원 을 탐방 했습니다. 저녁 으로는 홍천 찰옥수수 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 335;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 336;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 저녁 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 337;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 삼척 에서 캠핑 을 하며 동굴 탐험 을 즐겼습니다. 점심 으로는 삼척 황태구이 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 338;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 단양 에서 캠핑 을 하며 도담삼봉 을 탐방 했습니다. 저녁 으로는 단양 마늘 떡갈비 를 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 339;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 둘러보았습니다. 점심 으로는 안동 찜닭 을 먹었으며, 자전거 를 타고 마을 을 산책 했습니다.'
+WHERE BOARDNO = 340;
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 달렸습니다.'
+WHERE BOARDNO = 341;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 342;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 343;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 점심 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 344;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 저녁 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 345;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 점심 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 346;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 저녁 으로는 인제 황태구이 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 347;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 348;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 죽녹원 을 산책 했습니다. 저녁 으로는 담양 떡갈비 를 먹었으며, 자전거 를 타고 길 을 따라 산책 했습니다.'
+WHERE BOARDNO = 349;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 안동 에서 캠핑 을 하며 하회마을 을 탐방 했습니다. 점심 으로는 안동 찜닭 을 먹었으며, 자전거 를 타고 마을 을 산책 했습니다.'
+WHERE BOARDNO = 350;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 351;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 평창 에서 캠핑 을 하며 대관령 양떼목장 을 탐방 했습니다. 점심 으로는 평창 한우 스테이크 를 먹었으며, 자전거 를 타고 목장 주변 을 산책 했습니다.'
+WHERE BOARDNO = 352;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 군산 에서 캠핑 을 하며 선유도 를 둘러보았습니다. 저녁 으로는 군산 오징어 덮밥 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 353;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 포항 에서 캠핑 을 하며 영일대 해수욕장 을 산책 했습니다. 점심 으로는 포항 물회 를 먹었으며, 자전거 를 타고 해변 을 따라 달렸습니다.'
+WHERE BOARDNO = 354;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 대전 에서 캠핑 을 하며 한밭수목원 을 탐방 했습니다. 저녁 으로는 대전 칼국수 를 먹었으며, 자전거 를 타고 수목원 을 둘러보았습니다.'
+WHERE BOARDNO = 355;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 점심 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 356;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 저녁 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 357;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 태화강 국가정원 을 산책 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 358;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 359;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 점심 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 360;
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 점심 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 361;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 저녁 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 362;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 점심 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 363;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 저녁 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 364;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 365;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 가평 에서 캠핑 을 하며 남이섬 을 자전거 로 둘러보았습니다. 저녁 으로는 가평 잣죽 을 먹었으며, 캠핑 도구 로는 코베아 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 366;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 인제 에서 캠핑 을 하며 내린천 에서 래프팅 을 즐겼습니다. 점심 으로는 인제 황태구이 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 367;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 담양 에서 캠핑 을 하며 메타세쿼이아 길 을 산책 했습니다. 저녁 으로는 담양 대나무밥 을 먹었으며, 자전거 를 타고 길 을 따라 달렸습니다.'
+WHERE BOARDNO = 368;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 대구 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 대구 막창 을 먹었으며, 자전거 를 타고 산 을 올라갔습니다.'
+WHERE BOARDNO = 369;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 서산 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 370;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 춘천 에서 캠핑 을 하며 소양강 스카이워크 를 체험 했습니다. 점심 으로는 춘천 닭갈비 와 막국수 를 먹었으며, 자전거 를 타고 강변 을 산책 했습니다.'
+WHERE BOARDNO = 371;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 고흥 에서 캠핑 을 하며 나로우주센터 를 탐방 했습니다. 저녁 으로는 고흥 바지락 칼국수 를 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 372;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 울산 에서 캠핑 을 하며 태화강 국가정원 을 산책 했습니다. 점심 으로는 울산 고래고기 를 먹었으며, 자전거 를 타고 강변 을 따라 달렸습니다.'
+WHERE BOARDNO = 373;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 예산 에서 캠핑 을 하며 덕산온천 을 탐방 했습니다. 저녁 으로는 예산 사과 로 만든 사과파이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 374;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 정선 에서 캠핑 을 하며 정선 레일바이크 를 즐겼습니다. 점심 으로는 정선 곤드레밥 을 먹었으며, 자전거 를 타고 레일바이크 코스 를 따라 달렸습니다.'
+WHERE BOARDNO = 375;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 여수 에서 캠핑 을 하며 돌산대교 를 건너며 드라이브 를 즐겼습니다. 저녁 으로는 여수 게장 백반 을 먹었으며, 자전거 를 타고 여수밤바다 를 구경 했습니다.'
+WHERE BOARDNO = 376;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 창원 에서 캠핑 을 하며 마산 앞바다 를 둘러보았습니다. 점심 으로는 마산 아귀찜 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 377;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 서산 에서 캠핑 을 하며 해미읍성 을 탐방 했습니다. 저녁 으로는 서산 어리굴젓 을 곁들인 밥 을 먹었으며, 자전거 를 타고 읍성 을 산책 했습니다.'
+WHERE BOARDNO = 378;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 속초 에서 캠핑 을 하며 청초호 를 둘러보았습니다. 저녁 으로는 속초 닭강정 을 먹었으며, 자전거 를 타고 해안가 를 따라 달렸습니다.'
+WHERE BOARDNO = 379;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순천 에서 캠핑 을 하며 순천만 국가정원 을 탐방 했습니다. 점심 으로는 순천 꼬막 정식 을 먹었으며, 자전거 를 타고 정원 을 산책 했습니다.'
+WHERE BOARDNO = 380;
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 연천 에서 캠핑 을 하며 한탄강 지질공원 을 방문 했습니다. 점심 으로는 연천 두부 요리 를 먹었으며, 캠핑카 로는 쏘렌토 를 이용 했습니다.'
+WHERE BOARDNO = 381;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 남원 에서 캠핑 을 하며 광한루원 을 둘러보았습니다. 저녁 으로는 남원 추어탕 을 먹었으며, 자전거 를 타고 한옥 마을 을 탐방 했습니다.'
+WHERE BOARDNO = 382;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 영월 에서 캠핑 을 하며 동강 에서 래프팅 을 즐겼습니다. 점심 으로는 영월 더덕구이 를 먹었으며, 캠핑 도구 로는 코베아 의 타프 를 사용 했습니다.'
+WHERE BOARDNO = 383;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 문경 에서 캠핑 을 하며 문경 새재 를 등산 했습니다. 저녁 으로는 문경 사과 로 만든 애플파이 를 먹었으며, 캠핑카 로는 스타리아 를 이용 했습니다.'
+WHERE BOARDNO = 384;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 보령 에서 캠핑 을 하며 대천 해수욕장 을 방문 했습니다. 점심 으로는 보령 조개구이 를 먹었으며, 자전거 를 타고 해변 을 따라 달렸습니다.'
+WHERE BOARDNO = 385;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 나주 에서 캠핑 을 하며 나주 혁신도시 를 둘러보았습니다. 저녁 으로는 나주 곰탕 을 먹었으며, 자전거 를 타고 도시 를 탐방 했습니다.'
+WHERE BOARDNO = 386;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 밀양 에서 캠핑 을 하며 얼음골 을 탐방 했습니다. 점심 으로는 밀양 돼지국밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 스토브 를 사용 했습니다.'
+WHERE BOARDNO = 387;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 동해 에서 캠핑 을 하며 묵호항 을 둘러보았습니다. 저녁 으로는 동해 회덮밥 을 먹었으며, 자전거 를 타고 해안 도로 를 따라 달렸습니다.'
+WHERE BOARDNO = 388;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 포천 에서 캠핑 을 하며 백운계곡 을 산책 했습니다. 점심 으로는 포천 막국수 를 먹었으며, 캠핑카 로는 모하비 를 이용 했습니다.'
+WHERE BOARDNO = 389;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 영광 에서 캠핑 을 하며 백수 해안도로 를 드라이브 했습니다. 저녁 으로는 영광 굴비 정식 을 먹었으며, 자전거 를 타고 해안 도로 를 따라 달렸습니다.'
+WHERE BOARDNO = 390;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 고성 에서 캠핑 을 하며 화진포 를 탐방 했습니다. 점심 으로는 고성 생선구이 를 먹었으며, 캠핑 도구 로는 헬리녹스 의 체어 를 사용 했습니다.'
+WHERE BOARDNO = 391;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 영주 에서 캠핑 을 하며 소수서원 을 둘러보았습니다. 저녁 으로는 영주 한우 스테이크 를 먹었으며, 자전거 를 타고 서원 주변 을 산책 했습니다.'
+WHERE BOARDNO = 392;
+
+UPDATE TBL_BOARD
+SET CONTENT = '충청도 청주 에서 캠핑 을 하며 상당산성 을 등산 했습니다. 점심 으로는 청주 청국장 을 먹었으며, 캠핑카 로는 렉스턴 을 이용 했습니다.'
+WHERE BOARDNO = 393;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 해남 에서 캠핑 을 하며 땅끝마을 을 방문 했습니다. 저녁 으로는 해남 전복죽 을 먹었으며, 자전거 를 타고 마을 을 산책 했습니다.'
+WHERE BOARDNO = 394;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 경산 에서 캠핑 을 하며 팔공산 을 등반 했습니다. 점심 으로는 경산 삼겹살 구이 를 먹었으며, 캠핑 도구 로는 코베아 의 텐트 를 사용 했습니다.'
+WHERE BOARDNO = 395;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 태백 에서 캠핑 을 하며 태백산 을 등산 했습니다. 저녁 으로는 태백 황태 해장국 을 먹었으며, 자전거 를 타고 산 을 따라 달렸습니다.'
+WHERE BOARDNO = 396;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 이천 에서 캠핑 을 하며 이천 도자기 마을 을 둘러보았습니다. 점심 으로는 이천 쌀밥 을 먹었으며, 캠핑카 로는 쏘렌토 를 이용 했습니다.'
+WHERE BOARDNO = 397;
+
+UPDATE TBL_BOARD
+SET CONTENT = '전라도 순창 에서 캠핑 을 하며 강천산 군립공원 을 탐방 했습니다. 저녁 으로는 순창 고추장 불고기 를 먹었으며, 자전거 를 타고 공원 을 산책 했습니다.'
+WHERE BOARDNO = 398;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경상도 진주 에서 캠핑 을 하며 진주 성 을 둘러보았습니다. 점심 으로는 진주 비빔밥 을 먹었으며, 캠핑 도구 로는 스노우피크 의 화로대 를 사용 했습니다.'
+WHERE BOARDNO = 399;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 횡성 에서 캠핑 을 하며 횡성 한우 축제 를 즐겼습니다. 저녁 으로는 횡성 한우 스테이크 를 먹었으며, 자전거 를 타고 축제장 을 산책 했습니다.'
+WHERE BOARDNO = 400;
+UPDATE TBL_BOARD
+SET CONTENT = '비가 오니 텐트 안에서 라면 끓여 먹고 있습니다. 역시 캠핑의 묘미는 이런 날씨에도 밖에서 즐기는 것 같아요.'
+WHERE BOARDNO = 401;
+
+UPDATE TBL_BOARD
+SET CONTENT = '오늘의 캠핑지는 남해의 한적한 바닷가. 고요한 파도 소리와 함께 아침을 맞이합니다.'
+WHERE BOARDNO = 402;
+
+UPDATE TBL_BOARD
+SET CONTENT = '새로 산 캠핑 장비들을 테스트해봤습니다. 만족스러운 성능에 기분이 좋네요.'
+WHERE BOARDNO = 403;
+
+UPDATE TBL_BOARD
+SET CONTENT = '가족과 함께 떠난 주말 캠핑, 아이들이 자연을 마음껏 뛰놀 수 있어 좋았습니다.'
+WHERE BOARDNO = 404;
+
+UPDATE TBL_BOARD
+SET CONTENT = '주말에는 가까운 산으로 솔캠을 다녀왔습니다. 혼자만의 시간이 참 소중하다는 걸 다시 느꼈네요.'
+WHERE BOARDNO = 405;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑의 밤, 불멍을 하며 힐링하는 시간을 가졌습니다. 따뜻한 모닥불이 주는 위로는 참 크네요.'
+WHERE BOARDNO = 406;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경치 좋은 캠핑장에 와서 도심을 떠나 자연을 만끽하고 있습니다. 이런 게 진정한 쉼이 아닐까 싶어요.'
+WHERE BOARDNO = 407;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑에서 빠질 수 없는 것은 바로 바비큐. 친구들과 고기를 구워 먹으며 행복한 시간을 보냈습니다.'
+WHERE BOARDNO = 408;
+
+UPDATE TBL_BOARD
+SET CONTENT = '텐트를 설치하고 나서야 여유롭게 주위를 둘러보았습니다. 오랜만에 찾은 이곳은 여전히 평화롭네요.'
+WHERE BOARDNO = 409;
+
+UPDATE TBL_BOARD
+SET CONTENT = '일출을 보며 시작된 오늘의 캠핑, 자연 속에서 맞이하는 아침은 언제나 특별합니다.'
+WHERE BOARDNO = 410;
+
+UPDATE TBL_BOARD
+SET CONTENT = '겨울 캠핑의 매력은 역시 따뜻한 핫팩과 함께하는 눈 덮인 풍경이죠. 오늘도 만족스러운 캠핑이었습니다.'
+WHERE BOARDNO = 411;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑카를 타고 전국을 돌며 자연을 만끽하고 있습니다. 어디서나 하늘을 볼 수 있어 좋아요.'
+WHERE BOARDNO = 412;
+
+UPDATE TBL_BOARD
+SET CONTENT = '간단한 식사를 준비해보았습니다. 자연 속에서 먹는 음식은 무엇이든 더 맛있게 느껴지네요.'
+WHERE BOARDNO = 413;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이번 캠핑에서는 새로운 도전을 해봤습니다. 산 정상에서 맞이하는 일출은 감동 그 자체였습니다.'
+WHERE BOARDNO = 414;
+
+UPDATE TBL_BOARD
+SET CONTENT = '저녁 식사로 구운 감자와 옥수수를 준비했습니다. 간단하지만 자연 속에서 먹으니 더욱 특별하네요.'
+WHERE BOARDNO = 415;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑을 마치고 집으로 돌아가는 길, 아쉬운 마음에 한 번 더 뒤돌아봅니다. 곧 다시 오겠지요.'
+WHERE BOARDNO = 416;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑의 하이라이트는 역시 자연 속에서의 휴식. 이번 주말도 잘 쉬고 돌아갑니다.'
+WHERE BOARDNO = 417;
+
+UPDATE TBL_BOARD
+SET CONTENT = '다른 캠퍼들과 정보 공유를 하며 캠핑을 즐겼습니다. 역시 함께 하는 캠핑이 더 즐겁네요.'
+WHERE BOARDNO = 418;
+
+UPDATE TBL_BOARD
+SET CONTENT = '가족들과 함께한 캠핑, 아이들이 너무 좋아하네요. 자연에서 뛰어노는 아이들을 보니 뿌듯합니다.'
+WHERE BOARDNO = 419;
+
+UPDATE TBL_BOARD
+SET CONTENT = '오늘은 특별히 캠핑장에서 돌잔치를 열었습니다. 자연 속에서의 파티는 정말 기억에 남을 것 같아요.'
+WHERE BOARDNO = 420;
+UPDATE TBL_BOARD
+SET CONTENT = '한국에서 오토캠핑 은 인기 가 높아지고 있습니다. 많은 캠퍼 들이 차 에 필요한 모든 장비 를 실어 편안한 캠핑 을 즐기고 있습니다.'
+WHERE BOARDNO = 421;
+
+UPDATE TBL_BOARD
+SET CONTENT = '자연 속 에서의 캠핑 은 한국 의 산과 바다 를 만끽 할 수 있는 최고의 방법 입니다. 한적한 해변 에서는 조용히 캠핑 을 즐길 수 있습니다.'
+WHERE BOARDNO = 422;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국 의 시골 지역 에서는 강변 에서 낚시 를 하며 캠핑 을 즐기는 것이 일반적 입니다. 조용한 강변 은 최고의 캠핑 장소 입니다.'
+WHERE BOARDNO = 423;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 캠핑 문화 는 전통적인 텐트 캠핑 부터 고급스러운 글램핑 까지 다양 합니다. 가족 과 함께 자연 을 즐길 수 있는 완벽한 방법 입니다.'
+WHERE BOARDNO = 424;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국 의 캠핑장 에서는 자동차 와 함께하는 오토캠핑 이 인기 가 많습니다. 편리한 시설 과 아름다운 경관 을 즐길 수 있습니다.'
+WHERE BOARDNO = 425;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 의 산악 지역 은 겨울철 캠핑 의 매력 을 제공합니다. 스키 와 트레킹 을 함께 즐길 수 있어 더욱 매력적 입니다.'
+WHERE BOARDNO = 426;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 해변 에서는 여름철 에 캠핑 을 즐기기 좋습니다. 파도 소리 와 함께하는 캠핑 은 잊지 못할 추억 을 만들어 줍니다.'
+WHERE BOARDNO = 427;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국 의 시골 마을 에서는 무료 로 캠핑 을 할 수 있는 장소 들이 있습니다. 조용한 밤 에 별 을 바라보며 캠핑 을 즐길 수 있습니다.'
+WHERE BOARDNO = 428;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 캠핑 시즌 은 봄, 여름, 가을 에 따라 다르게 준비 해야 합니다. 각 계절 마다 캠핑 의 매력 이 다릅니다.'
+WHERE BOARDNO = 429;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 에도 캠핑 을 즐길 수 있는 곳 이 많이 있습니다. 도시 의 번잡함 에서 벗어나 자연 을 만끽 할 수 있는 기회 입니다.'
+WHERE BOARDNO = 430;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 의 한 캠핑장 에서 자연 속 의 힐링 을 즐겼습니다. 숲 속 에서 불멍 을 하며 하루 를 마무리 했습니다.'
+WHERE BOARDNO = 431;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 시골 에서는 조용한 강가 에서 캠핑 을 즐길 수 있습니다. 아침 에는 강가 에서 산책 을 즐겼습니다.'
+WHERE BOARDNO = 432;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한적한 해변 에서의 캠핑 은 스트레스 를 날려버리기에 최고 입니다. 파도 소리 를 들으며 잠 을 청했습니다.'
+WHERE BOARDNO = 433;
+
+UPDATE TBL_BOARD
+SET CONTENT = '산 과 바다 가 함께 있는 캠핑장 은 최고의 힐링 을 제공합니다. 자연 속 에서의 휴식 은 그 무엇 과도 바꿀 수 없습니다.'
+WHERE BOARDNO = 434;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 캠핑장 에서는 가족 과 함께하는 글램핑 이 인기를 끌고 있습니다. 편리한 시설 과 함께 자연 을 즐길 수 있습니다.'
+WHERE BOARDNO = 435;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국 의 오토캠핑 은 가족 단위 의 캠퍼 들에게 인기 가 많습니다. 대형 SUV 를 타고 캠핑 을 떠나는 것이 일반적 입니다.'
+WHERE BOARDNO = 436;
+
+UPDATE TBL_BOARD
+SET CONTENT = '여름철 에는 해변 근처 의 캠핑장 이 붐빕니다. 일찍 자리 를 잡지 않으면 자리를 구하기 어렵습니다.'
+WHERE BOARDNO = 437;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 의 캠핑장 에서는 산책 과 함께 하는 힐링 을 경험 할 수 있습니다. 맑은 공기 와 함께하는 산책 은 정말 기분 좋습니다.'
+WHERE BOARDNO = 438;
+
+UPDATE TBL_BOARD
+SET CONTENT = '가족 과 함께 떠난 캠핑 에서 저녁 으로 구운 감자 와 고구마 를 즐겼습니다. 자연 속 에서의 식사 는 더욱 특별 합니다.'
+WHERE BOARDNO = 439;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한국의 산속 캠핑 은 계곡 물소리 와 함께하는 힐링 의 시간이 됩니다. 자연 과 함께하는 캠핑 은 언제나 즐겁습니다.'
+WHERE BOARDNO = 440;
+UPDATE TBL_BOARD
+SET CONTENT = '영월 쉼오지캠프 에서 산맥 뷰 를 감상하며 힐링 타임 을 가졌습니다. 공방 체험 도 할 수 있어 색다른 캠핑 을 즐겼습니다.'
+WHERE BOARDNO = 441;
+
+UPDATE TBL_BOARD
+SET CONTENT = '쉼오지 캠프장 에서 캠핑 을 하며 공방 체험 으로 컵받침 을 만들었습니다. 깨끗한 시설 과 편안한 환경 이 좋았습니다.'
+WHERE BOARDNO = 442;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 의 노을공원 캠핑장 에서 자연 을 만끽하며 여유로운 시간을 보냈습니다. 도시 와 가까워 편리 했습니다.'
+WHERE BOARDNO = 443;
+
+UPDATE TBL_BOARD
+SET CONTENT = '낙동강 오토캠핑장 에서 캠핑 을 하며 자전거 도로 를 따라 달리는 기분 을 만끽 했습니다. 새소리 와 함께하는 아침 은 정말 상쾌 했습니다.'
+WHERE BOARDNO = 444;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 노을공원 캠핑장 에서 캠핑 을 즐기며 도심 속 자연 을 만끽 했습니다. 한강 과 가까워 밤 에도 안전 하게 캠핑 할 수 있었습니다.'
+WHERE BOARDNO = 445;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강동 가족 캠핑장 에서 가족 과 함께 캠핑 을 즐겼습니다. 아이들 이 자연 속 에서 뛰놀며 즐거운 시간을 보냈습니다.'
+WHERE BOARDNO = 446;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 그랜드 파크 캠핑장 에서 가족 과 함께 캠핑 을 하며 서울 동물원 을 방문 했습니다. 자연 과 함께하는 캠핑 은 언제나 즐겁습니다.'
+WHERE BOARDNO = 447;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 노을공원 캠핑장 에서 캠핑 을 하며 도심 속 에서도 자연 을 만끽 할 수 있는 시간이었습니다. 편리한 시설 과 접근성 이 좋아 추천 합니다.'
+WHERE BOARDNO = 448;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강동 가족 캠핑장 에서 캠핑 을 하며 서울 근교 의 자연 을 즐겼습니다. 아이들 도 함께할 수 있는 가족 친화적 인 장소 였습니다.'
+WHERE BOARDNO = 449;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 그랜드 파크 캠핑장 은 캠핑 과 함께 인근 명소 들 을 둘러보기 에도 좋습니다. 가족 과 함께하는 하루 는 소중한 추억 이 되었습니다.'
+WHERE BOARDNO = 450;
+
+UPDATE TBL_BOARD
+SET CONTENT = '노을공원 캠핑장 은 도시 속 에서도 자연 을 느낄 수 있는 곳 입니다. 도보 로 접근 가능 해 편리 하며, 특히 노을 이 아름답습니다.'
+WHERE BOARDNO = 451;
+
+UPDATE TBL_BOARD
+SET CONTENT = '낙동강 오토캠핑장 에서 캠핑 을 하며 자전거 를 타고 강변 을 따라 달렸습니다. 가족 과 함께 자연 속 에서의 여유 를 즐겼습니다.'
+WHERE BOARDNO = 452;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강동 가족 캠핑장 은 서울 근교 의 자연 속 에서 가족 과 함께할 수 있는 최적 의 장소 입니다. 다양한 편의 시설 이 있어 더욱 편리 합니다.'
+WHERE BOARDNO = 453;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 그랜드 파크 캠핑장 은 가족 과 함께 자연 속 에서 휴식 을 취할 수 있는 완벽한 장소 입니다. 도심 과 가까워 접근성 도 좋습니다.'
+WHERE BOARDNO = 454;
+
+UPDATE TBL_BOARD
+SET CONTENT = '노을공원 캠핑장 에서 캠핑 을 하며 아름다운 서울 의 야경 을 감상 했습니다. 한강 과의 접근성 도 좋아 밤 에도 안전 하게 캠핑 할 수 있었습니다.'
+WHERE BOARDNO = 455;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 강동 가족 캠핑장 은 넓은 공간 과 다양한 편의 시설 을 갖추고 있어 가족 단위 캠핑 에 최적 입니다. 자연 속 에서의 휴식 을 만끽 했습니다.'
+WHERE BOARDNO = 456;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 그랜드 파크 캠핑장 은 캠핑 과 더불어 인근 의 다양한 명소 를 둘러볼 수 있어 아이들 과 함께하기 좋습니다. 자연 속 에서의 여유 를 즐겼습니다.'
+WHERE BOARDNO = 457;
+
+UPDATE TBL_BOARD
+SET CONTENT = '노을공원 캠핑장 은 도시 와 가까워 접근성 이 뛰어나며, 아름다운 자연 을 감상 할 수 있습니다. 특히 노을 이 아름다운 곳 입니다.'
+WHERE BOARDNO = 458;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강동 가족 캠핑장 은 자연 속 에서 가족 과 함께 여유로운 시간을 보낼 수 있는 최적 의 장소 입니다. 편리한 시설 과 더불어 안전 도 보장 됩니다.'
+WHERE BOARDNO = 459;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 그랜드 파크 캠핑장 은 자연 과 함께하는 휴식 을 원하는 가족 에게 완벽한 선택 입니다. 캠핑장 주변 의 명소 들 을 방문 하는 재미 도 있었습니다.'
+WHERE BOARDNO = 460;
+UPDATE TBL_BOARD
+SET CONTENT = '다이소 에서 구입한 캠핑용품 으로 캠핑장 에서 새벽 을 맞이 했습니다. 저렴 하지만 실용 적인 장비들 에 만족 했습니다.'
+WHERE BOARDNO = 461;
+
+UPDATE TBL_BOARD
+SET CONTENT = '한탄강 오토캠핑장 에서의 겨울 캠핑 은 역시 별미 입니다. 새벽 공기 가 차갑지만 그 만큼 신선 합니다.'
+WHERE BOARDNO = 462;
+
+UPDATE TBL_BOARD
+SET CONTENT = '노을 이 지는 시간 에 타프 를 치고 나서 불멍 을 시작 했습니다. 역시 캠핑 의 꽃 은 불멍 이라고 생각 합니다.'
+WHERE BOARDNO = 463;
+
+UPDATE TBL_BOARD
+SET CONTENT = '백패킹 으로 홀로 떠난 캠핑 에서 자연 을 만끽 했습니다. 혼자 만의 시간을 가지며 힐링 할 수 있는 소중한 경험 이었습니다.'
+WHERE BOARDNO = 464;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이른 아침 에 강가 에서 커피 를 마시며 여유로운 시간을 보냈습니다. 캠핑 의 아침 은 언제나 특별 합니다.'
+WHERE BOARDNO = 465;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강아지 와 함께 떠난 루프탑 캠핑 은 최고의 경험 이었습니다. 반려견 도 자연 속 에서 자유로움 을 만끽 했습니다.'
+WHERE BOARDNO = 466;
+
+UPDATE TBL_BOARD
+SET CONTENT = '할머니 와 함께 떠난 캠핑 은 오랜만 에 가족 과의 소중한 시간을 보낼 수 있는 기회 가 되었습니다.'
+WHERE BOARDNO = 467;
+
+UPDATE TBL_BOARD
+SET CONTENT = '일본 에서 캠핑 을 즐긴 후 한국 으로 돌아왔습니다. 각국 의 캠핑 문화 를 비교 해보는 것도 재미 있는 경험 이었습니다.'
+WHERE BOARDNO = 468;
+
+UPDATE TBL_BOARD
+SET CONTENT = '새로 구입한 텔레스코픽 랜턴 으로 캠핑장 에서 밤 을 보냈습니다. 밝기 와 사용 편의성 에 만족 했습니다.'
+WHERE BOARDNO = 469;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑 장비 들 을 업그레이드 하고 나니 캠핑 이 더욱 즐거워졌습니다. 새로운 장비 들 을 사용 해보는 재미 가 있습니다.'
+WHERE BOARDNO = 470;
+
+UPDATE TBL_BOARD
+SET CONTENT = '솔캠 에서 홀로 즐기는 캠핑 의 묘미 를 느꼈습니다. 나만의 시간 과 공간 을 가지며 재충전 할 수 있었습니다.'
+WHERE BOARDNO = 471;
+
+UPDATE TBL_BOARD
+SET CONTENT = '낙동강 에서 자전거 를 타며 강변 을 따라 달렸습니다. 자연 속 에서의 자전거 라이딩 은 언제나 상쾌 합니다.'
+WHERE BOARDNO = 472;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 의 캠핑장 에서 가족 과 함께하는 시간을 보냈습니다. 가까운 거리 에서도 충분히 즐거운 캠핑 을 할 수 있습니다.'
+WHERE BOARDNO = 473;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이번 캠핑 은 평소 와는 다른 경험 이었습니다. 새로운 장비 들 과 함께한 캠핑 은 더욱 즐거웠습니다.'
+WHERE BOARDNO = 474;
+
+UPDATE TBL_BOARD
+SET CONTENT = '가족 과 함께한 캠핑 은 언제나 소중한 추억 을 남깁니다. 특히 아이들 이 자연 속 에서 즐거워하는 모습을 보면 더욱 행복 합니다.'
+WHERE BOARDNO = 475;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 의 노을공원 캠핑장 에서 일몰 을 감상 했습니다. 도심 속 에서도 이렇게 아름다운 자연 을 만날 수 있어 좋았습니다.'
+WHERE BOARDNO = 476;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑장 에서의 저녁 은 구운 고기 와 함께한 바비큐 파티 가 최고 였습니다. 자연 속 에서 먹는 음식 은 언제나 특별 합니다.'
+WHERE BOARDNO = 477;
+
+UPDATE TBL_BOARD
+SET CONTENT = '주말 에는 캠핑장 에서 쉬면서 스트레스 를 풀었습니다. 자연 속 에서의 휴식 은 그 무엇 과도 바꿀 수 없습니다.'
+WHERE BOARDNO = 478;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이번 캠핑 은 도심 속 을 떠나 자연 을 만끽 할 수 있는 시간이었습니다. 텐트 안에서 맞이하는 아침 은 언제나 새롭습니다.'
+WHERE BOARDNO = 479;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑장 에서의 하루 는 언제나 짧게 느껴집니다. 다음 캠핑 을 벌써 기다리게 됩니다.'
+WHERE BOARDNO = 480;
+UPDATE TBL_BOARD
+SET CONTENT = '포천 리버빌 캠핑장에서 애견동반 캠핑 을 즐겼습니다. 사이트 가 넓고 조용해 반려견 과 함께하는 캠핑 에 최적화된 장소 입니다.'
+WHERE BOARDNO = 481;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 에서 쉽게 접근 할 수 있는 캠핑장 에서 주말 캠핑 을 다녀왔습니다. 편리한 접근성 덕분에 자주 찾게 되는 곳 입니다.'
+WHERE BOARDNO = 482;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강원도 의 아름다운 경관 을 배경 으로 캠핑 을 즐겼습니다. 자연 속 에서의 힐링 은 그 무엇 과도 바꿀 수 없는 소중한 경험 입니다.'
+WHERE BOARDNO = 483;
+
+UPDATE TBL_BOARD
+SET CONTENT = '낙동강 에서의 자전거 캠핑 은 정말 특별한 경험 이었습니다. 자연 을 가까이서 느끼며 하루 를 보냈습니다.'
+WHERE BOARDNO = 484;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠차 카페 에서 추천 받은 캠핑 장비 들 을 이번 캠핑 에서 처음 사용 해봤습니다. 기대 이상 으로 만족 스러웠습니다.'
+WHERE BOARDNO = 485;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 근교 캠핑장 에서 가족 과 함께하는 시간을 보냈습니다. 아이들 도 자연 속 에서 뛰어놀 수 있어 좋은 추억 을 남길 수 있었습니다.'
+WHERE BOARDNO = 486;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 에 위치한 타프존 캠핑장 에서의 주말 은 정말 힐링 되는 시간이었습니다. 조용 하고 편안한 분위기 가 좋았습니다.'
+WHERE BOARDNO = 487;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠차 네이버 카페 에서 얻은 정보 로 가평 의 한 캠핑장 을 방문 했습니다. 시설 이 잘 갖추어져 있어 편리 했습니다.'
+WHERE BOARDNO = 488;
+
+UPDATE TBL_BOARD
+SET CONTENT = '애견 동반 캠핑장 을 찾아 포천 의 리버빌 캠핑장 을 다녀왔습니다. 반려견 과 함께하는 캠핑 은 언제나 특별 합니다.'
+WHERE BOARDNO = 489;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 노을 공원 캠핑장 에서 일몰 을 감상 했습니다. 도심 속 자연 을 만끽 할 수 있는 최고의 장소 중 하나 입니다.'
+WHERE BOARDNO = 490;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑 에서 빠질 수 없는 바비큐 파티 는 이번에도 성공적 이었습니다. 가족 과 함께하는 저녁 은 언제나 특별 합니다.'
+WHERE BOARDNO = 491;
+
+UPDATE TBL_BOARD
+SET CONTENT = '강동 가족 캠핑장 에서 즐긴 주말 은 아이들 도 만족 스러워 했습니다. 가까운 거리 에서도 충분히 캠핑 을 즐길 수 있습니다.'
+WHERE BOARDNO = 492;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠차 카페 에서 추천 받은 캠핑 장비 를 사용 해봤습니다. 캠핑 이 더욱 즐거워졌습니다.'
+WHERE BOARDNO = 493;
+
+UPDATE TBL_BOARD
+SET CONTENT = '도심 속 자연 을 느낄 수 있는 서울 근교 캠핑장 에서의 캠핑 은 편리 하면서도 특별한 경험 이었습니다.'
+WHERE BOARDNO = 494;
+
+UPDATE TBL_BOARD
+SET CONTENT = '경기도 의 타프존 캠핑장 에서 반려견 과 함께 캠핑 을 다녀왔습니다. 조용 하고 편안한 분위기 가 정말 좋았습니다.'
+WHERE BOARDNO = 495;
+
+UPDATE TBL_BOARD
+SET CONTENT = '포천 리버빌 캠핑장에서 겨울 캠핑 을 즐겼습니다. 추운 날씨 속에서도 따뜻한 불멍 을 하며 하루 를 보냈습니다.'
+WHERE BOARDNO = 496;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠차 카페 에서 추천 받은 캠핑장 을 방문 했습니다. 자연 속 에서의 휴식 은 언제나 특별 합니다.'
+WHERE BOARDNO = 497;
+
+UPDATE TBL_BOARD
+SET CONTENT = '서울 노을 공원 캠핑장 에서 일몰 을 감상 하며 주말 을 마무리 했습니다. 도시 속 에서 자연 을 느낄 수 있는 곳 입니다.'
+WHERE BOARDNO = 498;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑장 에서의 저녁 은 언제나 특별 합니다. 바비큐 파티 와 함께한 이번 캠핑 도 성공적 이었습니다.'
+WHERE BOARDNO = 499;
+
+UPDATE TBL_BOARD
+SET CONTENT = '가족 과 함께한 캠핑 은 언제나 소중한 추억 으로 남습니다. 아이들 도 자연 속 에서 뛰어놀 수 있어 행복 했습니다.'
+WHERE BOARDNO = 500;
+
+UPDATE TBL_BOARD
+SET CONTENT = '고요한 새벽, 산속 에서 들려오는 새소리 와 함께 시작된 캠핑 의 아침 은 언제나 특별 합니다. 이번 캠핑 에서는 자연 이 주는 평온함 을 마음껏 느낄 수 있었습니다.'
+WHERE BOARDNO = 501;
+
+UPDATE TBL_BOARD
+SET CONTENT = '도심 의 소음 을 뒤로하고 산속 에서 만끽 한 이번 캠핑 은 마음 의 휴식을 주었습니다. 텐트 밖 으로 고개 를 내밀면 별 이 쏟아질 것만 같은 하늘 이 반겨줍니다.'
+WHERE BOARDNO = 502;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이번 캠핑 에서는 평소 와 다른 캠핑 메뉴 를 시도해 보았습니다. 숲 속 에서 직접 잡은 버섯 을 곁들인 리조또 는 캠핑 요리 의 새로운 가능성 을 보여주었습니다.'
+WHERE BOARDNO = 503;
+
+UPDATE TBL_BOARD
+SET CONTENT = '바람 이 살랑이는 날, 캠핑카 를 타고 끝없는 도로 를 달리며 자유 로움 을 만끽 했습니다. 목적지 에 도착 했을 때, 이미 해 는 저물어가고 있었지만, 그 순간 은 무엇 과도 바꿀 수 없는 행복 이었습니다.'
+WHERE BOARDNO = 504;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑 의 진정한 묘미 는 자연 속 에서의 음악 감상 이 아닐까요? 이번 캠핑 에서는 기타 를 들고 가서 저녁 노을 을 배경 으로 노래 를 불렀습니다. 그 순간 만은 세상 에 우리 밖에 없는 듯 했습니다.'
+WHERE BOARDNO = 505;
+
+UPDATE TBL_BOARD
+SET CONTENT = '이번 캠핑 에서는 고요한 호숫가 에서 아침 을 맞이 했습니다. 물 위로 퍼지는 안개 와 함께 한 따뜻한 커피 한 잔 은 그 어떤 고급 카페 도 부럽지 않았습니다.'
+WHERE BOARDNO = 506;
+
+UPDATE TBL_BOARD
+SET CONTENT = '캠핑장 에서의 저녁 은 대형 스크린 을 설치 하고 야외 영화 상영 으로 꾸며봤습니다. 자연 속 에서 즐기는 영화 는 색다른 재미 를 선사 했습니다.'
+WHERE BOARDNO = 507;
+

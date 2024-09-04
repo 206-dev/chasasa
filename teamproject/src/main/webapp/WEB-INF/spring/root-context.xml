@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!-- HikariCP Connection Pool -->
+	<!-- 접속 정보 -->
+	<bean id="hikariConfig"
+		class="com.zaxxer.hikari.HikariConfig">
+		
+		<property name="driverClassName"
+			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"/>
+			
+		<property name="jdbcUrl"
+			value="jdbc:log4jdbc:oracle:thin:@localhost:1521/xe"/>
+		
+		<property name="username"
+			value="teamproject"/>
+		<property name="password"
+			value="1234"/>
+	</bean>
+	
+	<!-- 커넥션 풀 -->
+	<bean id="dataSource"
+		class="com.zaxxer.hikari.HikariDataSource">
+		<constructor-arg ref="hikariConfig"/>
+	</bean>
+	
+	<!-- 세션 팩토리: 커넥션풀로 부터 커넥션을 얻어서 SQL문장을 실행할 놈 -->
+    <bean id="sqlSessionFactoryJang"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.teamproject.www.jang.domain"/>
+    </bean>
+
+    <!-- lee용 sqlSessionFactory -->
+    <bean id="sqlSessionFactorylee"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.teamproject.www.lee.domain"/>
+    </bean>
+    
+    <!-- kim용 sqlSessionFactory -->
+    <bean id="sqlSessionFactorykim"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.teamproject.www.kim.domain"/>
+    </bean>
+    
+    <!-- common용 sqlSessionFactory -->
+    <bean id="sqlSessionFactory"
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.teamproject.www.common.domain"/>
+    </bean>
+    
+   <!-- MyBatis 매퍼 스캐너 설정 (각각의 sqlSessionFactory 지정) -->
+     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.teamproject.www.jang.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactoryJang"/>
+        <property name="nameGenerator">
+            <bean class="org.springframework.beans.factory.support.DefaultBeanNameGenerator"/>
+        </property>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.teamproject.www.lee.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactorylee"/>
+        <property name="nameGenerator">
+            <bean class="org.springframework.beans.factory.support.DefaultBeanNameGenerator"/>
+        </property>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.teamproject.www.kim.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactorykim"/>
+        <property name="nameGenerator">
+            <bean class="org.springframework.beans.factory.support.DefaultBeanNameGenerator"/>
+        </property>
+    </bean>
+	
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.teamproject.www.common.mapper"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="nameGenerator">
+            <bean class="org.springframework.beans.factory.support.DefaultBeanNameGenerator"/>
+        </property>
+    </bean>
+	
+	
+	
+	
+	
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- @Transactional  -->
+	<tx:annotation-driven/>
+	
+	<!-- 마이바티스 매퍼 파일 스캔 -->
+<!-- 	<mybatis-spring:scan base-package="com.teamproject.www.Jang.mapper"/> -->
+<!-- 	<mybatis-spring:scan base-package="com.teamproject.www.lee.mapper"/> -->
+<!-- 	<mybatis-spring:scan base-package="com.teamproject.www.kim.mapper"/> -->
+	
+	<!-- 서비스 컴포넌트 스캔 -->
+	<context:component-scan base-package="com.teamproject.www.jang.service"/>
+	<context:component-scan base-package="com.teamproject.www.lee.service"/>
+	<context:component-scan base-package="com.teamproject.www.kim.service"/>
+	<context:component-scan base-package="com.teamproject.www.common.service"/>
+	
+	
+	<!-- 스케쥴 관리 -->
+	<task:annotation-driven/>
+	<context:component-scan base-package="com.teamproject.www.task"/>
+	
+	<!-- Google SMTP 설정 -->
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="port" value="587"/>
+		<property name="username" value="asraisin@gmail.com"/>
+		<property name="password" value="okqz gqum hiby bzdv"/>	
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- Kim Google SMTP 설정 -->
+	<bean id="kimMailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"/>
+		<property name="port" value="587"/>
+		<property name="username" value="mailtesting2404@gmail.com"/>
+		<property name="password" value="qhqj lsnq xfja yiyr"/>	
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+	
+	
+	
+</beans>

@@ -1,0 +1,772 @@
+@charset "UTF-8";
+
+/* Basic styling to emulate Tailwind's utility classes */
+.bg-white {
+	background-color: #ffffff;
+}
+
+.text-black {
+	color: #000000;
+}
+
+.min-h-screen {
+	min-height: 100vh;
+}
+
+.p-4 {
+	padding: 16px;
+}
+
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.space-x-4 {
+	gap: 16px;
+}
+
+.bg-gray-100 {
+	/* background-color: #e5e5e5; */
+    background-color: #ffffff;
+    border: 2px solid #474545;
+    color: #232323;
+    border-radius: 10px;
+}
+
+.bg-gray-200 {
+	/* background-color: #d9d9d9; */
+    background-color: white;
+    border: 2px solid #3f423f;
+    border-radius: 10px;
+    color: black;
+    height: 204px;
+}
+
+.text-2xl {
+	font-size: 24px;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.hover\:text-yellow-500:hover {
+	color: #f1c525;;
+}
+
+.bg-gray-300 {
+	background-color: #f3f3f3;
+    border-radius: 10px;
+    border:1px solid gray;
+}
+
+.text-gray-700 {
+	color: #4a5568;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-cols-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-4 {
+	gap: 16px;
+}
+
+.mt-4 {
+	margin-top: 16px;
+}
+
+.text-yellow-500 {
+	color: #e67300;
+}
+
+.text-gray-500 {
+	color: #556780;
+}
+
+/* Additional custom styles */
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+	background-color: #ffffff;;
+	margin-top: 0.5rem;
+	border-radius: 10px;
+    border: 1px solid gray;
+    color: black;
+}
+
+.flex-item {
+	flex: 1;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.flex-item:first-child {
+	text-align: left;
+	flex: none;
+}
+
+.flex-item:last-child {
+	text-align: right;
+	flex: none;
+}
+
+.user-info {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+.user-info img {
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+}
+
+.user-info .text-xl {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.user-info .text-sm {
+	font-size: 0.875rem;
+	color: #4a5568;
+}
+
+.user-info .bg-yellow-500 {
+	background-color: #ecc94b;
+	color: #1a202c;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+}
+.yellow-btn{
+	color: white;
+	background-color: rgb(255, 186, 66);
+	border-radius: 10px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yellow-btn:hover{
+	background-color: rgb(255, 167, 14);
+}
+
+.user-info .bg-gray-300 {
+	background-color: #e2e8f0;
+}
+
+.user-info .p-2 {
+	padding: 0.5rem 1rem;
+}
+
+.user-info .rounded {
+	border-radius: 0.25rem;
+}
+
+.user-info .mt-4 {
+	margin-top: 1rem;
+}
+
+.user-info .grid-cols-5 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+/* .user-info a {
+    background-color: #e2e8f0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1a202c;
+}
+ */
+tr.spacer td {
+	padding-top: 10px; /* 위쪽 간격 */
+	padding-bottom: 10px; /* 아래쪽 간격 */
+}
+
+.btn-warning {
+	background-color: #ecc94b;
+	color: #1a202c;
+	padding: 0.25rem 0.5rem; /* 패딩 값 조정 */
+	border-radius: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.btn-warning:hover {
+	background-color: #f1c525;;
+}
+
+.btn-danger {
+	background-color: #e53e3e;
+	color: #ffffff;
+	padding: 0.25rem 0.5rem; /* 패딩 값 조정 */
+	border-radius: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.btn-danger:hover {
+	background-color: #c53030;
+}
+
+.existing-account-btn:hover{
+	color:black;
+}
+
+/* 모든 tr 요소에서 hover 효과 제거 */
+tr:hover {
+	background-color: inherit;
+}
+
+.color-gray{
+	color:gray
+}
+.color-gray:hover{
+	color:black;
+}
+
+#divDrop {
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    background: #f3f4f6;
+    border: 2px dashed #d1d5db;
+    text-align: center;
+    cursor: pointer;
+}
+
+#uploadedList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#uploadedList > li {
+    list-style-type: none;
+    flex: 1 1 100px;
+    position: relative;
+}
+
+#uploadedList > li img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#uploadedList > li span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+.bigPictureWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bigPicture img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+
+.main-container {
+	width: 795px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@media print {
+	body {
+		margin: 0 !important;
+	}
+}
+
+.main-containerck {
+	font-family: 'Lato';
+	width: 100%; /* 가로 길이를 조정합니다 */
+	max-width: 795px; /* 최대 가로 길이를 설정합니다 */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ck-content {
+	font-family: 'Lato';
+	line-height: 1.6;
+	min-width: 100%; /* 최소 가로 길이를 조정합니다 */
+	max-width: 100%; /* 최대 가로 길이를 조정합니다 */
+	min-height: 500px; /* 최소 세로 길이를 설정합니다 */
+	word-break: break-word;
+}
+
+.editor-container_classic-editor .editor-container__editor {
+	min-width: 100%; /* 최소 가로 길이를 조정합니다 */
+	max-width: 100%; /* 최대 가로 길이를 조정합니다 */
+	min-height: 500px; /* 최소 세로 길이를 설정합니다 */
+}
+
+/* 로그인 컨테이너 스타일 */
+.login-container {
+    background-color: #f1f1f1; /* 배경색을 페이지와 통일 */
+    padding: 1rem;
+    border-radius: 10px; /* 부드러운 모서리 */
+    width: 300px;
+    margin: 0 auto; /* 가운데 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+.logo-link{
+	display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: auto auto 30px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+/* 로그인 버튼 스타일 */
+
+
+/* 로그인 버튼 호버 효과 */
+.login-btn:hover {
+    background-color: #f1c525;; /* 살짝 어두운 주황색으로 변경 */
+}
+
+/* 링크 스타일 */
+.login-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 개별 링크 스타일 */
+.login-links a {
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.height-60{
+	height: 60px;
+}
+.height-31{
+	height: 31px;
+}
+
+/* login.jsp 스타일링 */
+/* login.jsp 스타일링 */
+.input-box {
+    width: 320px;
+    padding: 0.75rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1rem;
+}
+
+.input-box::placeholder {
+    color: #aaa;
+}
+
+.login-container {
+    background-color: #eeeeee;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.login-btn {
+    display: block;
+    background-color: #ffd148;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 320px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #f1c525;
+}
+
+.kim-join-btn{
+	width: 344px;
+}
+
+/* 회원가입 버튼 스타일 */
+.signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: white; */
+    background-color: #50a2ff;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 270px;
+    height: 44px;
+    max-width: 320px;
+    margin: 25px auto 1rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+.signup-btn a{
+    text-decoration: none;
+}
+
+/* 회원가입 버튼 호버 효과 */
+.signup-btn:hover {
+    background-color: #2793ff; /* 호버 시 더 진한 파란색으로 변경 */
+    color:white;
+}
+
+.join-container {
+    background-color: #e5e5e5; /* 배경색을 페이지와 통일 */
+    padding: 1rem;
+    border-radius: 8px; /* 부드러운 모서리 */
+    width: 400px;
+    margin: 0 auto; /* 가운데 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+
+
+.text-sm {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+
+.login-container .login-btn{
+    width: 270px;
+}
+
+.relative{
+    position: relative;
+}
+
+
+
+
+
+/* main 페이지요소 */
+
+/* slide */
+.image-slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 2s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*  */
+
+
+
+
+/* 해시태그 입력창 스타일 */
+.hashtag-input {
+    z-index: 10;
+    padding: 10px;  /* 패딩을 크게 설정하여 입력창이 더 커 보이게 합니다 */
+    border: 2px solid #d1d5db;  /* 테두리를 더 두껍게 만듭니다 */
+    border-radius: 8px;  /* 둥근 모서리 */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* 그림자 효과를 강조 */
+    background-color: #f0f0f0;  /* 더 눈에 띄는 배경색 */
+    font-size: 16px;  /* 글자 크기를 키웁니다 */
+    width: 250px;  /* 입력창의 너비를 더 넓게 설정 */
+    height: 40px;  /* 입력창의 높이를 더 크게 설정 */
+}
+
+/* 해시태그 게시물 수 표시 스타일 */
+.hashtag-count {
+    position: absolute;
+    z-index: 10;
+    padding: 5px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* 배경 색상 */
+    font-size: 14px;
+    color: #000; /* 글자 색상 */
+}
+
+
+
+.hashtag-button {
+	white-space: nowrap !important; /* 줄바꿈을 막아 가로 길이를 강제로 확보 */
+    padding: 0 !important;
+    border: none !important;
+    background-color: #f2994a !important; /* 버튼의 배경색을 태그와 일치 */
+    color: white !important; /* 버튼의 글자색을 태그와 일치 */
+    display: inline-block !important;
+    border-radius: 4px !important; /* 둥근 모서리 적용 */
+    margin-right: 5px !important; /* 오른쪽 여백 */
+    cursor: pointer; /* 버튼 모양 */
+    font-size: 18px;
+}
+.ck-widget[data-html-object-embed-label="HTML 오브젝트"] {
+    display: inline !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+
+
+.ck-widget[data-html-object-embed-label="HTML 오브젝트"]::before {
+    display: none !important;
+}
+
+/* 아이디/비밀번호 찾기 버튼 */
+.find-btn {
+    display: inline-block;
+    width: 49%; /* 회원가입 버튼의 절반 너비 */
+    padding: 5px 0;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(43 171 97);
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.findIdRun-btn {
+	width: 100%;
+    max-width: 200px;
+    text-align: center; 
+    padding: 10px 20px;
+    background-color: #ffd148;
+    color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.find-btn:hover {
+    background-color: rgb(43 171 97);
+    color: white;
+}
+
+
+/* 갤러리 css 모음 */
+.gallery-slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.gallery-slider {
+    display: flex;
+    width: max-content; /* 이미지들이 연속적으로 배열되도록 설정 */
+}
+
+.gallery-item {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 190px;
+}
+
+.gallery-item img {
+    width: 190px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-info {
+    margin-top: 5px;
+}
+
+.gallery-info h3 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.gallery-info p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
+
+/* 갤러리 css 모음 */
+
+
+
+
+
+/* side 태그 추천 정렬*/
+.hashtag-container {
+    display: flex;
+    flex-wrap: wrap; /* flexbox 레이아웃으로 요소가 자동으로 줄 바꿈됨 */
+    gap: 10px; /* 해시태그들 사이의 간격 */
+}
+
+.hashtag {
+    padding: 3px 7px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap; /* 텍스트가 한 줄로 출력되도록 설정 */
+}
+
+/* 각 해시태그에 대한 고정 폰트 크기 설정 */
+.hashtag.tag1 { font-size: 20px; }
+.hashtag.tag2 { font-size: 18px; }
+.hashtag.tag3 { font-size: 16px; }
+.hashtag.tag4 { font-size: 14px; }
+.hashtag.tag5 { font-size: 22px; }
+.hashtag.tag6 { font-size: 19px; }
+.hashtag.tag7 { font-size: 17px; }
+.hashtag.tag8 { font-size: 15px; }
+.hashtag.tag9 { font-size: 21px; }
+.hashtag.tag10 { font-size: 18px; }
+.hashtag.tag11 { font-size: 20px; }
+.hashtag.tag12 { font-size: 16px; }
+.hashtag.tag13 { font-size: 14px; }
+.hashtag.tag14 { font-size: 22px; }
+.hashtag.tag15 { font-size: 19px; }
+.hashtag.tag16 { font-size: 17px; }
+.hashtag.tag17 { font-size: 15px; }
+.hashtag.tag18 { font-size: 21px; }
+.hashtag.tag19 { font-size: 20px; }
+.hashtag.tag20 { font-size: 18px; }
+
+.hashtag:nth-child(4n+1) { background-color: #f56c6c; }
+.hashtag:nth-child(4n+2) { background-color: #67c23a; }
+.hashtag:nth-child(4n+3) { background-color: #409eff; }
+.hashtag:nth-child(4n+4) { background-color: #e6a23c; }
+/* 회원가입 */
+.timer {
+        color: red;
+        font-weight: bold;
+    }
+
+/* 비동기 버튼 공통 스타일 */
+.async-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    border-radius: 20px;
+    background-color: #50a2ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+}
+
+.async-btn:hover {
+    background-color: #2793ff;
+}
+
+/* 중복 확인, 인증 확인, 인증 버튼 스타일 */
+#checkUserId,
+#checkNickname,
+#checkEmail,
+#sendEmailVerification,
+#verifyCodeButton {
+    width: 140px;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}

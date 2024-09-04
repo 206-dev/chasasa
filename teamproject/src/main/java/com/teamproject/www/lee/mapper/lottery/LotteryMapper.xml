@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.lottery.LotteryMapper">
+	<!-- 로터리 체크 -->
+	<select id="checkLottery" resultType="int">
+		select count(*) from tbl_lottery
+		where userid = #{userid} 
+		and lotterydate = to_char(sysdate, 'yyyy/MM/dd') 
+		and cost = #{cost}
+	</select>
+	
+	<insert id="buyLottery">
+		insert into tbl_lottery(userid, cost)
+		values(#{userid}, #{cost})
+	</insert>
+	
+
+</mapper>

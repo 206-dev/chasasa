@@ -1,0 +1,314 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px; /* 본문 전체에 들여쓰기 추가 */
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* 컨테이너에서 내용이 넘칠 때 스크롤 표시 */
+}
+
+/* 헤딩 스타일 */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+}
+
+/* 공지사항 테이블 스타일 */
+.notice-detail-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.notice-detail {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left; /* 표 안의 텍스트는 왼쪽 정렬 */
+}
+
+.notice-detail .tr-content td {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.notice-detail th,
+.notice-detail td {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.notice-detail th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center; /* 헤더는 가운데 정렬 */
+}
+
+.notice-detail td {
+    background-color: #fff;
+    color: #555;
+    padding-left: 15px; /* 내용에 들여쓰기 추가 */
+}
+
+/* 버튼 스타일 */
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+  	transition: background-color 0.3s, transform 0.3s;
+    margin: 5px; /* 버튼 간격 추가 */
+}
+
+.actions button:hover {
+    background-color: #5a6268;
+}
+
+/* 목록 버튼 길이 조정 */
+#btnList {
+    width: 100%; /* 원하는 너비로 설정 */
+}
+
+
+td ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: disc; /* 원하는 목록 스타일로 변경 가능합니다 */
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .notice-detail th,
+    .notice-detail td {
+        padding: 8px;/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px; /* 본문 전체에 들여쓰기 추가 */
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* 컨테이너에서 내용이 넘칠 때 스크롤 표시 */
+}
+
+/* 헤딩 스타일 */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #444;
+}
+
+/* 공지사항 테이블 스타일 */
+.notice-detail-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 20px; /* 왼쪽과 오른쪽에 20px 패딩 추가 */
+    box-sizing: border-box;
+}
+
+.notice-detail {
+    width: 100%;
+    max-width: calc(100% - 40px); /* 왼쪽과 오른쪽에 20px씩 여백을 두기 위해 계산된 너비 사용 */
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left; /* 표 안의 텍스트는 왼쪽 정렬 */
+    table-layout: fixed; /* 테이블 레이아웃 고정 */
+}
+
+.notice-detail .tr-content td {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+.notice-detail th,
+.notice-detail td {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.notice-detail th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center; /* 헤더는 가운데 정렬 */
+}
+
+.notice-detail td {
+    background-color: #fff;
+    color: #555;
+    padding-left: 15px; /* 내용에 들여쓰기 추가 */
+}
+
+/* 버튼 스타일 */
+.actions {
+    text-align: center;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #5a6268;
+}
+
+td ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    list-style-type: disc; /* 원하는 목록 스타일로 변경 가능합니다 */
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .notice-detail th,
+    .notice-detail td {
+        padding: 8px;
+    }
+
+    .actions button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .notice-detail-wrapper {
+        padding: 0 10px; /* 작은 화면에서도 왼쪽과 오른쪽에 패딩을 유지 */
+    }
+
+    .notice-detail th,
+    .notice-detail td {
+        padding: 6px;
+    }
+
+    .actions button {
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .notice-detail-wrapper {
+        padding: 0 5px; /* 더 작은 화면에서는 패딩을 줄이기 */
+    }
+
+    .notice-detail th,
+    .notice-detail td {
+        padding: 4px;
+        font-size: 12px;
+    }
+
+    .actions button {
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+}
+        
+    }
+
+    .actions button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .notice-detail-wrapper {
+        padding: 0 10px; /* 작은 화면에서도 왼쪽과 오른쪽

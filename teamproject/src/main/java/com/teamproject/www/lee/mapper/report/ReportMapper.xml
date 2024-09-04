@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.report.ReportMapper">
+	<select id="getReportReasonTypeList" resultType="ReportReasonTypeDto">
+		select * from tbl_report_reason_type
+		order by reasontypeno
+	</select>	
+
+	<insert id="insertReport">
+		insert into tbl_report(reportno, userid, target, targetTypeNo, content, reasonTypeNo, targetUrl)
+		values(seq_report.nextval, #{userid}, #{target}, #{targetTypeNo}, #{content}, #{reasonTypeNo}, 
+			   #{targetUrl})
+	</insert>
+</mapper>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.teamproject.www.kim.mapper.ReplyMapper">
+	
+	<!-- 댓글 등록 -->
+	<insert id="insert">
+		INSERT INTO TBL_REPLY
+			(replyNo, boardNo, comments, userId, nickname, updatedate)
+		VALUES
+			(seq_reply.NEXTVAL, #{boardNo}, #{comments}, #{userId}, #{nickname}, SYSDATE)
+	</insert>
+	
+	<!-- 댓글 읽기 -->
+	<select id="read" resultType="InformationReplyVo">
+		SELECT * FROM TBL_REPLY
+		WHERE replyNo = #{replyNo}
+	</select>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="delete">
+		DELETE FROM TBL_REPLY
+		WHERE replyNo = #{replyNo}
+	</delete>
+	
+    <!-- 댓글 수정 -->
+    <update id="update" parameterType="InformationReplyVo">
+        UPDATE TBL_REPLY
+        SET comments = #{comments},
+            nickname = #{nickname},
+            updatedate = SYSDATE
+        WHERE replyNo = #{replyNo}
+    </update>
+    
+	
+	<!-- 댓글 리스트 불러오기 -->
+	<select id="getList" resultType="InformationReplyVo">
+		SELECT * FROM TBL_REPLY
+		WHERE boardNo = #{boardNo}
+		ORDER BY replyNo ASC
+	</select>
+</mapper>

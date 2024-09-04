@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.board.AttachMapper">
+	<!-- insertAttach -->
+	<insert id="insertAttach">
+		insert into tbl_attach(fileno, boardno, uploadpath)
+		values(seq_attach.nextval, #{boardno}, #{uploadpath})
+	</insert>
+	<!-- getYesterdayPathList -->
+	<select id="getYesterdayUploadpath" resultType="String">
+		select uploadpath from tbl_attach
+		where trunc(regdate) = trunc(sysdate-1)
+	</select>
+	<!-- getPathListByBoardNo -->
+	<select id="getPathListByBoardNo" resultType="String">
+		select uploadpath from tbl_attach
+		where boardno = #{boardno}
+	</select>
+	<!-- getCountByBoardno -->
+	<select id="getCountByBoardno" resultType="int">
+		select count(*) from tbl_attach
+		where boardno = #{boardno}
+	</select>
+	<!-- deleteByBoardNo -->
+	<delete id="deleteByBoardNo">
+		delete from tbl_attach
+		where boardno = #{boardno}
+	</delete>
+</mapper>

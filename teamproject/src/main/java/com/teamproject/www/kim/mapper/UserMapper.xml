@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.kim.mapper.UserMapper">
+	<!--  	회원가입  -->
+	<insert id="join"> 
+		insert into tbl_user values(#{userid}, #{userpw}, #{nickname}, #{email}) 
+	</insert>
+		
+	<select id="findByUserIdAndPassword" resultType="com.teamproject.www.kim.domain.UserVo">
+        SELECT * 
+        FROM tbl_user 
+        WHERE userid = #{userId} 
+        AND userpw = #{userPw}
+    </select>
+    
+    <select id="getUserById" resultType="com.teamproject.www.kim.domain.UserVo">
+   		SELECT * FROM tbl_user WHERE userid = #{userId}
+	</select>
+	
+	<insert id="insertUser" parameterType="com.teamproject.www.kim.domain.UserVo">
+        INSERT INTO TBL_USER (USERID, USERPW, NICKNAME, EMAIL, REGDATE)
+        VALUES (#{userid}, #{userpw}, #{nickname}, #{email}, SYSDATE)
+    </insert>
+    
+    <!-- 테스트  -->
+    <select id="getLikedContentByUser" resultType="java.lang.String">
+	    SELECT b.CONTENT
+	    FROM TBL_BOARD b
+	    JOIN TBL_LIKE l ON b.BOARDNO = l.BOARDNO
+	    WHERE l.USERID = #{userid}
+	</select>
+	
+	
+	
+	<!-- 관심사 존재 여부 확인 -->
+    <select id="checkInterestExist" parameterType="map" resultType="int">
+        SELECT frequency
+        FROM tbl_interests
+        WHERE userid = #{userId} AND word = #{word}
+    </select>
+
+    <!-- 관심사 frequency 업데이트 -->
+    <update id="updateInterestFrequency" parameterType="map">
+        UPDATE tbl_interests
+        SET frequency = #{frequency}, updatedate = SYSDATE
+        WHERE userid = #{userId} AND word = #{word}
+    </update>
+
+    <!-- 새로운 관심사 추가 -->
+    <insert id="insertInterest" parameterType="map">
+        INSERT INTO tbl_interests (userid, word, frequency, updatedate)
+        VALUES (#{userId}, #{word}, 1, SYSDATE)
+    </insert>
+    
+    <select id="getInterestCountByUserId" parameterType="string" resultType="int">
+        SELECT COUNT(*)
+        FROM tbl_interests
+        WHERE userid = #{userId}
+    </select>
+
+	<select id="findWordToReplace" parameterType="string" resultType="string">
+	    SELECT word
+	    FROM (
+	        SELECT word
+	        FROM tbl_interests
+	        WHERE userid = #{userId} AND frequency &lt;= 1
+	        ORDER BY updatedate ASC
+	    )
+	    WHERE ROWNUM = 1
+	</select>
+
+    <update id="replaceInterest" parameterType="map">
+        UPDATE tbl_interests
+        SET word = #{word}, frequency = 1, updatedate = SYSTIMESTAMP
+        WHERE userid = #{userId} AND word = #{oldWord}
+    </update>
+    
+    
+    <update id="updateInterestFrequencyLevel" parameterType="map">
+	    UPDATE tbl_interests
+	    SET frequencylevel = #{frequencylevel}, updatedate = SYSDATE
+	    WHERE userid = #{userId} AND word = #{word}
+	</update>
+	
+	
+	<select id="findUserIdByEmail" resultType="java.lang.String">
+        SELECT userid 
+        FROM tbl_user 
+        WHERE email = #{email}
+    </select>
+    <!-- 비밀번호찾기 -->
+	
+	<select id="findUserByEmail" resultType="com.teamproject.www.kim.domain.UserVo">
+        SELECT * FROM TBL_USER WHERE EMAIL = #{email}
+    </select>
+
+    <update id="updatePassword">
+        UPDATE TBL_USER SET USERPW = #{newPassword} WHERE USERID = #{userId}
+    </update>
+    
+    <!-- 회원가입 비동기 -->
+    <!-- 아이디 중복 확인 -->
+    <select id="checkUserId" resultType="int">
+        SELECT COUNT(*) 
+        FROM tbl_user 
+        WHERE userid = #{userId}
+    </select>
+
+    <!-- 닉네임 중복 확인 -->
+    <select id="checkNickname" resultType="int">
+        SELECT COUNT(*) 
+        FROM tbl_user 
+        WHERE nickname = #{nickname}
+    </select>
+
+    <!-- 이메일 중복 확인 -->
+    <select id="checkEmail" resultType="int">
+        SELECT COUNT(*) 
+        FROM tbl_user 
+        WHERE email = #{email}
+    </select>
+    
+</mapper>

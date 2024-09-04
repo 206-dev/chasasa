@@ -1,0 +1,7 @@
+로그인
+
+d:/algo/2024/08/22/user1_2408220907.txt 생성 (로그인한시각)
+
+글작성완료 -> tbl_board content where boardno = {boardno} -> content 필터링 -> 임시파일 키워드 저장
+
+글삭제 -> tbl_board content where boardno

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.reply.ReplyMapper">
+	<!-- 댓글달기 -->
+	<insert id="insertReply">
+		<choose>
+			<when test="replyno != null">
+				insert into tbl_reply (replyno, boardno , comments, userid, nickname, parentreplyno)
+				values(seq_reply.nextval, #{boardno}, #{comments}, #{userid}, #{nickname} ,#{replyno})
+			
+			</when>
+			<otherwise>
+				insert into tbl_reply (replyno, boardno , comments, userid, nickname)
+				values(seq_reply.nextval, #{boardno}, #{comments}, #{userid}, #{nickname})
+			</otherwise>
+		</choose>
+	</insert>
+
+	<!-- 댓글리스트 가져오기 -->
+	<select id="getList" resultType="ReplyListDto">
+				select boardno, replyno, comments, userid, nickname, likes, updatedate, parentreplyno,
+				    LEVEL AS reply_level
+				from
+				    tbl_reply
+				where
+				    boardno = #{boardno}
+				start with
+				    parentreplyno IS NULL
+				connect by
+				    prior replyno = parentreplyno
+				ORDER SIBLINGS BY
+				    updatedate
+	</select>
+	<!-- 댓글삭제전에 count가져오기 -->
+	<select id="getListReplyno" resultType="int">
+		select replyno from tbl_reply
+		where boardno = #{boardno}
+		and likes > 0
+	</select>
+	<!-- 댓글삭제 -->
+	<delete id="delete">
+		delete tbl_reply
+		where replyno = #{replyno}
+	</delete>
+	<!-- 댓글 게시판번호로 리스트 desc 가져오기 -->
+	<select id="getReplynoListWithBoardno" resultType="int">
+		select replyno
+		from tbl_reply
+		where boardno = #{boardno}
+		order by replyno desc
+	</select>
+	
+	<!-- 댓글수정 -->
+	<update id="update">
+		update tbl_reply
+		set comments = #{comments}
+		where replyno = #{replyno}
+	</update>
+	
+	<!-- 댓글 좋아요 -->
+	<update id="like">
+		update tbl_reply
+		set	likes = (select likes from tbl_reply where replyno = #{replyno}) +1
+		where replyno = #{replyno}
+	</update>
+	<!-- 댓글 좋아요 취소 -->
+	<update id="disLike">
+		update tbl_reply
+		set	likes = (select likes from tbl_reply where replyno = #{replyno}) -1
+		where replyno = #{replyno}
+	</update>
+</mapper>

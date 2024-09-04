@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.check-modal-container{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	z-index: 100;
+	display: none;
+}
+
+.check-modal{
+	position: absolute;
+	background-color: white;
+	left: 50%;
+	top: 200px;
+	transform: translateX(-50%);
+	display: inline-grid;
+	padding: 10px;
+	border-radius: 1rem;
+	border: 2px solid rgb(15, 115, 57);
+	gap: 1rem;
+}
+
+.calender-container{
+	display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days */
+    gap: 4px;
+	text-align: center;
+	place-items: center;
+}
+
+.calender-container .days{
+	color: white;
+	font-weight: bold;
+	padding: 2px 6px;
+	border-radius: 8px;
+	width: 52px;
+}
+
+.month{
+	width: 30px;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: rgb(43 171 97);
+}
+
+.calender-container .day-sun{
+	
+	background-color: rgb(255 104 104);
+	border: 2px solid rgb(255 104 104);
+
+	
+}
+
+.calender-container .day-name {
+	background-color: rgb(43 171 97);
+	border: 2px solid rgb(43 171 97);
+}
+
+.calender-container .day{
+	width: 36px;
+	height: 36px;
+	border: 2px solid rgb(43 171 97);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calenda-btn{
+	margin: 1rem auto 0;
+}
+
+.checkDay-rule-container{
+	border: 1px solid rgb(43 171 97);
+	border-radius: 10px;
+	padding: 1rem;
+}
+.checkDay-rule-container ul{
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.checkDay-rule-container li{
+	list-style : none;
+}
+
+.checkDay-rule-container h3{
+
+}

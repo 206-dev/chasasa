@@ -1,0 +1,310 @@
+코드 저장
+
+// 유저 선호도 기반 게시물 리스트 가져오기
+System.out.println("선호 게시물 조회를 위해 접속한 유저: " + loginSession.getUserid());
+ // 처음 페이지 접근 시 round 0만 로딩
+List<InformationBoardVo> favoriteBoardList = boardService.getFavoriteBoardListByRound(loginSession.getUserid(), 0);
+model.addAttribute("favoriteBoardList", favoriteBoardList);
+	    
+
+
+// 추가 게시물을 불러오기 위한 매핑 (AJAX 요청 처리)
+@GetMapping("/loadMorePosts")
+@ResponseBody
+public List<InformationBoardVo> loadMorePosts(@RequestParam("round") int round, @SessionAttribute("loginSessionDto") LoginSessionDto loginSession) {
+		
+System.out.println("Server received round: " + round);
+	    
+	    
+return boardService.getFavoriteBoardListByRound(loginSession.getUserid(), round);
+}
+
+
+
+service.java
+public List<InformationBoardVo> getFavoriteBoardListByRound(String userId, int round);
+
+serviceimpl.java
+// 일반출력
+//	@Override
+//	public List<InformationBoardVo> getFavoriteBoardList(String userId) {
+//	    System.out.println("getFavoriteBoardList 시작, userId: " + userId);
+//
+//	    List<InformationBoardVo> finalBoardList = new ArrayList<>();
+//	    Set<Long> displayedBoardNos = new HashSet<>();
+//
+//	    // 빈도 수준별 키워드 목록을 가져오기
+//	    List<String> hashtags = boardMapper.getHashtagsByFrequencyLevel(userId);
+//
+//	    int round = 0;
+//	    boolean isAdded = true;
+//
+//	    while (isAdded) {
+//	        isAdded = false;
+//	        System.out.println("Round: " + round);
+//	        for (String hashtag : hashtags) {
+//	        	System.out.println("Checking hashtag: " + hashtag);
+//	            List<InformationBoardVo> postsByHashtag = boardMapper.getPostsByHashtag(userId, hashtag);
+//
+//	            for (InformationBoardVo post : postsByHashtag) {
+//	                if (!displayedBoardNos.contains(post.getBoardNo())) {
+//	                    post.setMatchingKeyword(hashtag);
+//	                    finalBoardList.add(post);
+//	                    displayedBoardNos.add(post.getBoardNo());
+//	                    isAdded = true;
+//	                    break;  // 하나의 게시물만 추가하고 다음 키워드로 이동
+//	                }
+//	            }
+//	        }
+//	        round++;
+//	    }
+
+	    // 남은 좋아요하지 않은 게시물을 추가
+//	    List<InformationBoardVo> allPosts = boardMapper.getAllPostsExcludingLiked(userId);
+//	    for (InformationBoardVo post : allPosts) {
+//	        if (!displayedBoardNos.contains(post.getBoardNo())) {
+//	            finalBoardList.add(post);
+//	            displayedBoardNos.add(post.getBoardNo());
+//	        }
+//	    }
+//	    // 총 게시글 수 출력
+//	    System.out.println("유저의 선호도에 따라 선정된 총 게시글 수: " + (finalBoardList.size() -1 ));
+//
+//	    return finalBoardList;
+//	}
+	
+	// 일반출력
+	
+	// 클래스 변수로 currentRound를 선언
+	private int currentRound = 0;
+
+	@Override
+	public List<InformationBoardVo> getFavoriteBoardListByRound(String userId, int round) {
+	    System.out.println("getFavoriteBoardListByRound 시작, userId: " + userId + ", round: " + round);
+
+	    // 모든 라운드에서 공통적으로 사용할 Set
+	    Set<Long> displayedBoardNos = new HashSet<>();
+
+	    // 현재 라운드에서 새롭게 가져온 게시물을 저장할 List
+	    List<InformationBoardVo> roundBoardList = new ArrayList<>();
+
+	    // 빈도 수준별 키워드 목록을 가져오기
+	    List<String> hashtags = boardMapper.getHashtagsByFrequencyLevel(userId);
+
+	    boolean isAdded = true;
+
+	    // 원하는 라운드까지 진행
+	    while (currentRound <= round && isAdded) {
+	        isAdded = false;
+	        
+	        System.out.println("현재 라운드 작업 중: " + currentRound);
+
+	        for (String hashtag : hashtags) {
+	            System.out.println("Checking hashtag: " + hashtag);
+	            List<InformationBoardVo> postsByHashtag = boardMapper.getPostsByHashtag(userId, hashtag);
+
+	            for (InformationBoardVo post : postsByHashtag) {
+	                if (!displayedBoardNos.contains(post.getBoardNo())) {
+	                    displayedBoardNos.add(post.getBoardNo());
+
+	                    // 현재 라운드에 도달했을 때만 데이터를 추가
+	                    if (currentRound == round) {
+	                        post.setMatchingKeyword(hashtag);
+	                        roundBoardList.add(post);
+	                        isAdded = true;
+	                        break;  // 하나의 게시물만 추가하고 다음 키워드로 이동
+	                    }
+	                }
+	            }
+	        }
+
+	        currentRound++; // 라운드 증가
+	    }
+
+	    System.out.println("currentRound 값: " + currentRound + ", round 값: " + round);
+	    System.out.println("반환된 게시물 수: " + roundBoardList.size());
+	    return roundBoardList;
+	}
+
+
+mapper.java
+
+	// main페이지 최상단 오늘의 추천게시글
+	// 일반출력용 특정 해시태그에 따른 게시물 리스트 가져오기
+    List<InformationBoardVo> getPostsByHashtag(@Param("userId") String userId, @Param("hashtag") String hashtag);
+
+    // 일반출력용 유저가 좋아요하지 않은 모든 게시물 가져오기
+    List<InformationBoardVo> getAllPostsExcludingLiked(@Param("userId") String userId);
+    // 일반출력용
+    public List<String> getHashtagsByFrequencyLevel(String userId);
+
+
+mapper.xml
+
+<!--     일반출력용 특정 해시태그에 따른 게시물 리스트 가져오기 -->
+    <select id="getPostsByHashtag" resultType="InformationBoardVo">
+        SELECT
+            b.BOARDNO,
+            b.TITLE,
+            b.NICKNAME,
+            b.REGDATE,
+            b.UPDATEDATE,
+            b.LIKES,
+            b.VIEWS,
+            b.REPLYCOUNT,
+            t.BOARDTYPE,
+            #{hashtag} AS matchingKeyword
+        FROM
+            TBL_BOARD b
+            JOIN TBL_BOARD_TYPE t ON b.BOARDTYPENO = t.BOARDTYPENO
+        WHERE 
+            b.CONTENT LIKE '%' || '­#' || #{hashtag} || '­' || '%'
+            AND b.BOARDNO NOT IN (
+                SELECT l.BOARDNO 
+                FROM TBL_LIKE l 
+                WHERE l.USERID = #{userId}
+            )
+        ORDER BY
+            b.REGDATE DESC
+    </select>
+    <!-- 일반출력용  -->
+
+    <!-- 유저가 좋아요하지 않은 모든 게시물 가져오기 -->
+    <select id="getAllPostsExcludingLiked" resultType="InformationBoardVo">
+        SELECT 
+            b.BOARDNO,
+            b.TITLE,
+            b.NICKNAME,
+            b.REGDATE,
+            b.UPDATEDATE,
+            b.LIKES,
+            b.VIEWS,
+            b.REPLYCOUNT,
+            t.BOARDTYPE
+        FROM 
+            TBL_BOARD b
+            JOIN TBL_BOARD_TYPE t ON b.BOARDTYPENO = t.BOARDTYPENO
+        WHERE 
+            b.BOARDNO NOT IN (
+                SELECT l.BOARDNO 
+                FROM TBL_LIKE l 
+                WHERE l.USERID = #{userId}
+            )
+        ORDER BY 
+            b.REGDATE DESC
+    </select>
+
+    <!-- 유저의 관심 키워드 목록을 빈도 레벨에 따라 가져오기 -->
+    <select id="getHashtagsByFrequencyLevel" resultType="string">
+        SELECT WORD
+        FROM TBL_INTERESTS
+        WHERE USERID = #{userId}
+        ORDER BY FREQUENCYLEVEL DESC
+    </select>
+
+
+
+main.jsp
+
+			<!-- 1. 오늘의 추천 게시물 (고정) -->
+<!--  			<div class="bg-gray-100 p-4"> -->
+<!--  			    <h2 class="text-3xl font-bold">당신을 위한 오늘의 추천 게시글</h2> -->
+<!--  			    <div class="mt-2"> -->
+<%--  			        <c:forEach items="${favoriteBoardList}" var="post"> --%>
+<!--  			            <div class="flex-container"> -->
+<%--  			                <a href="/kim/board/read?boardNo=${post.boardNo}" class="flex-item"> --%>
+<%--  			                    <span>${post.title}</span> --%>
+<!--  			                </a> -->
+<%--  			                <span class="text-gray-500 flex-item">${post.views}</span> --%>
+<!--  			                <span class="text-gray-500 flex-item"> -->
+<%--  			                    <fmt:formatDate value="${post.regdate}" pattern="MM-dd" /> --%>
+<!--  			                </span> -->
+<!--  			                <span class="text-gray-500 flex-item"> -->
+<%--  					            선정된 키워드: ${post.matchingKeyword} --%>
+<!--  					        </span> -->
+<!--  			            </div> -->
+<%--  			        </c:forEach> --%>
+<!--  			    </div> -->
+<!--  			</div> -->
+
+<div class="bg-gray-100 p-4">
+    <h2 class="text-3xl font-bold">당신을 위한 오늘의 추천 게시글</h2>
+    
+    <!-- 스크롤 가능한 영역 -->
+    <div id="scrollablePostContainer" class="scrollable-container mt-2">
+        <c:forEach items="${favoriteBoardList}" var="post">
+            <div class="flex-container">
+                <a href="/kim/board/read?boardNo=${post.boardNo}" class="flex-item">
+                    <span>${post.title}</span>
+                </a>
+                <span class="text-gray-500 flex-item">${post.views}</span>
+                <span class="text-gray-500 flex-item">
+                    <fmt:formatDate value="${post.regdate}" pattern="MM-dd" />
+                </span>
+                <span class="text-gray-500 flex-item">
+                    선정된 키워드: ${post.matchingKeyword}
+                </span>
+            </div>
+        </c:forEach>
+        <!-- 로딩 아이콘 -->
+        <div id="loading" class="loading" style="display: none;">
+            <img src="/resources/images/default.png" alt="Loading...">
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentRound = 0;
+    const container = document.getElementById('scrollablePostContainer');
+    const loading = document.getElementById('loading');
+    let isLoading = false;
+
+    container.addEventListener('scroll', () => {
+        if (container.scrollTop + container.clientHeight >= container.scrollHeight - 10 && !isLoading) {
+            currentRound++;
+            loadMorePosts(currentRound);
+        }
+    });
+
+ // 예시 AJAX 요청 및 데이터 처리 코드
+    function loadMorePosts(round) {
+        isLoading = true;
+        loadingIndicator.style.display = 'block';
+
+        $.ajax({
+            url: '/kim/board/loadMorePosts',
+            type: 'GET',
+            data: { round: round },
+            dataType: 'json',
+            success: function(response) {
+                console.log('응답 데이터:', response);
+
+                if (Array.isArray(response) && response.length > 0) {
+                    response.forEach(function(post) {
+                        const postElement = document.createElement('div');
+                        postElement.classList.add('post-item');
+                        postElement.innerHTML = `
+                            <h2>${post.title}</h2>
+                            <p>${post.content}</p>
+                            <span>작성자: ${post.author}</span>
+                        `;
+                        document.getElementById('postContainer').appendChild(postElement);
+                    });
+                } else {
+                    console.warn('더 이상 불러올 게시물이 없습니다.');
+                    noMorePosts = true;
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('데이터를 불러오는 중 오류 발생:', error);
+            },
+            complete: function() {
+                isLoading = false;
+                loadingIndicator.style.display = 'none';
+            }
+        });
+    }
+
+
+</script>
+

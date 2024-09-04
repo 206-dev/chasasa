@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.replylike.ReplyLikeMapper">
+	<!-- 내가 좋아요 했는지 체크 -->
+	<select id="checkLike" resultType="int">
+		select count(*) from tbl_reply_like
+		where replyno = #{replyno} and userid = #{userid}
+	</select>
+	
+	<!-- 댓글 좋아요 -->
+	<insert id="replyLike">
+		insert into tbl_reply_like(likeno, replyno, userid)
+		values(seq_reply_like.nextval , #{replyno}, #{userid})
+	</insert>
+	
+		<!-- 댓글 좋아요 삭제 -->
+	<delete id="replyDisLike">
+		delete from tbl_reply_like
+		where replyno = #{replyno} and userid = #{userid}
+	</delete>
+	
+	<!-- 댓글 좋아요 갯수 가져오기 -->
+	<select id="getCountLikes" resultType="int">
+		select count(*) from tbl_reply_like
+		where replyno = #{replyno}
+	</select>
+<!-- 	<select id="isLike"> -->
+<!-- 		select count(*) from tbl_reply_like -->
+<!-- 		where replyno = #{replyno} -->
+<!-- 	</select> -->
+
+
+</mapper>

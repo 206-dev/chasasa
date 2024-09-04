@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.checkday.CheckdayMapper">
+	<!-- 출첵 여부 체크 -->
+	<select id="isCheckday" resultType="int">
+		select count(*) from tbl_checkday
+		where userid = #{userid} and checkday = to_char(sysdate, 'yyyy/MM/dd')
+	</select>
+	
+	<!-- 출쳌 -->
+	<insert id="insertCheckday">
+		insert into tbl_checkday(userid)
+		values (#{userid})
+	</insert>
+	
+	<!-- 이번달 출첵 확인 -->
+	<select id="getCheckdayList" resultType="int">
+		select to_number(substr(checkday, 9, 10)) day from tbl_checkday
+		where userid = #{userid} and substr(checkday, 1, 7) = to_char(sysdate, 'yyyy/MM')
+		order by day
+	</select>
+</mapper>

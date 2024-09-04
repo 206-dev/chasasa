@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.jang.mapper.BoardMapper">
+<!-- DB에서의 column명과 Class의 필드명이 일치해야 값을 제대로 메핑함 -->            
+<!-- join 한 테이블에서는 b.boardNo와 같은 컬럼명이 결과로 나오므로 이것을 mybatis를 통해 메핑을 하던가 별칭을 줘야함 -->
+	
+	<!-- 리스트 가져오기 -->
+	<select id="getNoticeList" resultType="NoticeDto">
+		select boardNo, title,content, nickname, regdate
+		from tbl_board 
+		where boardTypeNo = 1
+	</select>
+
+	<!-- 공지사항 입력하기 -->
+	<insert id="insertNotice">
+		<selectKey keyProperty="boardNo" resultType="long" order="BEFORE">
+			select seq_board.nextval from dual
+		</selectKey>
+		
+		insert into tbl_board(boardNo, title, content, nickname, boardTypeNo)
+		values(#{boardNo}, #{title}, #{content}, #{nickname}, 1)
+	</insert>
+	
+	<!-- 공지사항 하나 가져오기 -->
+	<select id="getNotice" resultType="NoticeDto">
+		select boardNo, title, content, nickname, regdate, views
+		from tbl_board
+		where boardTypeNo = 1
+		and boardNo = #{boardNo}
+	</select>
+	
+	
+	<!-- 총 갯수 가져오기 -->
+	<select id="getTotal" resultType="int">
+	    select count(*) from tbl_board
+	    <where>
+	        <if test="type != null">
+	            <choose>
+	                <when test="type == 'T'.toString()">
+	                    title like '%' || #{keyword} || '%'
+	                </when>
+	                <when test="type == 'I'.toString()">
+	                    nickname like '%' || #{keyword} || '%'
+	                </when>
+	                <when test="type == 'C'.toString()">
+	                    content like '%' || #{keyword} || '%'
+	                </when>
+	            </choose>
+	            and boardTypeNo = 1
+	        </if>
+	        <if test="type == null">
+	            boardTypeNo = 1
+	        </if>
+	    </where>
+	</select>
+
+	
+	
+	<!-- 페이징하며 리스트 가져오기 -->
+	<select id="getListWithPaging" resultType="NoticeDto">
+	select * from (
+	  <!-- 3개의 테이블을 조인한 서브쿼리 생성-->
+		    select 
+		        boardNo, 
+		        title, 
+		        content, 
+		        nickname, 
+		        regdate,
+		        views,
+		        <!-- rownum을 boardNo의 내림차순으로 정렬 -->
+		        <!-- ${} 컬럼명으로써 적용 -->
+		        row_number() over (
+		        <choose>
+		        	<when test="sort != null and sort != '' and order != null and order != ''">
+	        		  order by ${sort} ${order}
+		        	</when>
+		        	<otherwise>
+					  order by boardNo desc		        	
+		        	</otherwise>
+		        </choose>
+		        ) as rn
+		    from 
+		        tbl_board
+		    where 
+		         <!-- 공지사항 : boardTypeNo = 1 -->
+		        boardTypeNo = 1
+		        <if test="type != null">
+		        	<choose>
+		        		<when test="type == 'T'.toString()">
+		        			and title like '%' || #{keyword} || '%'
+		        		</when>
+		        		
+		        		<when test="type == 'I'.toString()">
+		        			and nickname like '%' || #{keyword} || '%'
+		        		</when>
+		        		
+		        		<when test="type == 'C'.toString()">
+		        			and content like '%' || #{keyword} || '%'
+		        		</when>
+		        	</choose>
+		        </if>
+		)
+		where rn between (#{pageNum} - 1) * #{amount} + 1 and #{pageNum} * #{amount}
+		order by rn
+
+	</select>
+	
+	<!-- 조회수 증가 -->
+	<update id="viewsUp">
+		update tbl_board
+		set views = views + 1
+		where boardNo = #{boardNo}
+	</update>
+	
+	<!-- 공지사항 수정 -->
+	<update id="updateNotice">
+		update tbl_board
+		set content = #{content},
+		    UPDATEDATE = sysdate
+		where boardNo = #{boardNo}
+	</update>
+	
+	<!-- 공지사항 삭제 -->
+	<delete id="deleteNotice">
+		delete from tbl_board
+		where boardNo = #{boardNo}
+	</delete>
+	
+</mapper>

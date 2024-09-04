@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+.board-title{
+	margin-bottom: 10px;
+}
+
+
+/* 테이블 */
+.table{
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.table-head:nth-child(1){
+    width: 10%;
+    /* background-color: #585858; */
+}
+.table-head:nth-child(2){
+    width: 60%;
+}
+.table-head:nth-child(3){
+    width: 10%;
+}
+.table-head:nth-child(4){
+    width: 10%;
+}
+.table-head:nth-child(5){
+    width: 5%;
+}
+.table-head:nth-child(6){
+    width: 5%;
+}
+.table th{
+	background-color: #666161;
+/* 	background-color: rgb(255, 200, 100); */
+/* 	background-color: rgb(0, 190, 220); */
+/* 	background-color: rgb(255, 170, 0); */
+	color: white;
+}
+.table, .table tr, .table th, .table td{
+    border: 0;
+    border-collapse: collapse;
+}
+.table th{
+/*     border-top: 2px solid rgb(255, 170, 0); */
+}
+.table tr{
+    border-bottom: 1px solid #666161;
+    height: 2rem;
+}
+/* .table tr:hover{ */
+/*     background-color: #f7f7f7;    */
+/* } */
+.table-text-left{
+    text-align: left;
+}
+.a_boardno{
+	display:block;
+}
+.table-text-right{
+    text-align: right;
+}
+
+.reply-count{
+	display: inline-flex;
+	background-color: rgb(255, 200, 100);
+	color:white;
+	border-radius: 100%;
+	width: 1.4rem;
+	height: 1.4rem;
+	justify-content: center;
+}
+
+.new{
+	display: inline-flex;
+	background-color: rgb(255, 80, 80);
+	color:white;
+	border-radius: 8px;
+	padding: 0 8px 2px;
+	text-align: center;
+	align-items: center;
+}
+
+.table a:hover .reply-count{
+	background-color: white;
+	color: rgb(255, 170, 0);
+}
+.table a:hover .new{
+	color: rgb(255, 80, 80);
+	background-color: white;
+	font-weight: 700;
+}
+/* .table a:hover + .a_boardno:hover{ */
+/* 	background-color: white; */
+/* 	color: rgb(255, 200, 100); */
+/* } */
+
+.table a{
+    text-decoration: none;
+    color: black;
+}
+.table a:hover{
+	color: white;
+	font-weight: 800;
+}
+.table tr:has(a:hover){
+	background-color: rgb(255, 200, 100);
+/* 	background-color: rgb(255, 170, 0); */
+	color: white;
+}
+
+
+
+/* 페이징 */
+.page-Container{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.page-ul{
+    display: flex;
+    gap: 10px;
+}
+.page-item{
+    list-style-type: none;
+}
+.page-item:nth-child(1){
+    width: auto;
+}
+
+
+/* .page-item:nth-child(10){
+    width: auto;
+} */
+/* .page-item:nth-child(-n+2):nth-child(n+9){
+    width: 10px;
+    height: 10px;
+} */
+
+.page-link{
+    text-decoration: none;
+    color: black;
+}
+.page-link:hover{
+    color: #928a8a;
+}
+
+
+/* 게시판 검색 */
+.search-Container{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+.search-Container .btn{
+    margin-left: 10px;
+}
+
+.search-Container select{
+    margin-right: 2px;
+}

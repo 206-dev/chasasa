@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.jang.mapper.UserMapper">
+	<!-- 회원가입 -->
+	<insert id="join">
+		insert into tbl_user(userId, userPw, nickname, email, profile, gender)
+		values(#{userId}, #{userPw}, #{nickname}, #{email}, #{profile}, #{gender})
+	</insert>
+	
+	<!-- 로그인 -->
+	<select id="login" resultType="com.teamproject.www.common.domain.LoginSessionDto">
+		select userid, nickname, userlevel, point, gradeNo
+		from tbl_user
+		where userId= #{userId}
+		and userPw = #{userPw}
+	</select>
+	
+	<!-- 중복확인 -->
+	<select id="checkId" resultType="int">
+		select count(userId) from tbl_user
+		where userId = #{userId}
+	</select>
+</mapper>

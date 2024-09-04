@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.common.mapper.UserActionMapper">
+	<!-- 리스트 가져오기 -->
+	<select id="getList" resultType="UserActionDto">
+		SELECT
+			a.userId AS userId,
+			a.actionType AS actionType,
+			b.reasonType AS reasonType,
+			a.startTime AS startTime,
+			a.endTime AS endTime,
+			a.issuedBy AS issuedBy,
+			a.status AS status
+		FROM
+			tbl_user_actions a
+		JOIN
+			tbl_report_reason_type b
+		ON
+			a.reasonTypeNo = b.reasonTypeNo
+	</select>
+	
+	<!-- 한 데이터만 가져오기 -->
+	<select id="getListByUserId" resultType="UserActionDto">
+		SELECT
+			a.userId AS userId,
+			a.actionType AS actionType,
+			b.reasonType AS reasonType,
+			a.startTime AS startTime,
+			a.endTime AS endTime,
+			a.issuedBy AS issuedBy,
+			a.status AS status
+		FROM
+			tbl_user_actions a
+		JOIN
+			tbl_report_reason_type b
+		ON
+			a.reasonTypeNo = b.reasonTypeNo
+		Where a.userId = #{userId}
+	</select>
+	
+	<!-- 데이터 등록 -->
+	<insert id="insert">
+		<selectKey keyProperty="reasonTypeNo" resultType="int" order="BEFORE">
+			select reasonTypeNo from tbl_report_reason_type
+			where reasonType = #{dto.reasonType}
+		</selectKey>
+		insert into tbl_user_actions(actionNo, userId, actionType, reasonTypeNo, endTime, issuedBy)
+		values(seq_user_actions.nextval, #{dto.userId}, #{dto.actionType}, #{reasonTypeNo}, sysdate + #{period}, #{dto.issuedBy})
+	</insert>
+	
+	<!-- 데이터 상태 변경 -->
+	<update id="update">
+		update tbl_user_actions
+		set status = #{status}
+		where userId = #{userId}
+	</update>
+	
+</mapper>

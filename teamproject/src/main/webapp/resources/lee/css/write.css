@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.btnUpload{
+	display: none;
+}
+
+.ul-uploaded-list{
+	display:grid;
+	min-height: 120px;
+	padding: 1rem 2rem;
+	width: 100%;
+	border: 2px solid #474545;
+	border-radius: 10px;
+	grid-template-columns: repeat(6, 1fr);
+}
+.ul-uploaded-list > div > img{
+	width: 100px;
+	height: 100px;
+	margin-right: 1rem;
+}
+.ul-uploaded-list > div > div {
+	font-size: 0.6rem;
+	width : 100px;
+	overflow-wrap: break-word;
+}
+.span-delete-image{
+	cursor: pointer;
+	color: gray;
+}
+.span-delete-image:hover{
+	color: black;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.teamproject.www.common.mapper.ReplySummaryMapper">
+	<select id="getCountList" resultType="ReplySummaryDto">
+		select count(tr.boardNo) count, tbt.boardType
+			from tbl_reply tr 
+				join tbl_board tb on tr.boardNo = tb.boardNo
+				join tbl_board_type tbt on tbt.boardTypeNo = tb.boardTypeNo
+			group by tbt.boardType
+	</select>
+</mapper>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.board.BoardMapper">
+	<!-- 자유게시판 게시글 입력 -->
+<!-- 	<insert id="insertFreeBoard"> -->
+<!-- 		insert into tbl_board_free(boardno, title, content, nickname) -->
+<!-- 		values(seq_board.nextval, #{title}, #{content}, #{nickname}) -->
+<!-- 	</insert> -->
+	
+	<!-- 게시글 입력 - getKey -->
+	<insert id="insertGetKey">
+		<selectKey keyProperty="boardno" order="BEFORE" resultType="int">
+			select seq_board.nextval from dual
+		</selectKey>
+		insert into tbl_board(boardno, title, content, userid, nickname, boardtypeno)
+		values(#{boardno}, #{title}, #{content}, #{userid}, #{nickname}, #{boardtypeno})
+	</insert>
+	
+	<!-- 자유게시판 글 리스트 가져오기 -->
+<!-- 	<select id="getList" resultType="BoardListDto"> -->
+<!-- 		select boardno, title, nickname, regdate, updateDate, views, replyCount -->
+<!-- 		from tbl_board -->
+<!-- 		order by boardno desc -->
+<!-- 	</select> -->
+	
+	<select id="getListWithPaging" resultType="BoardListDto">
+		select * from(select /*+ index_desc (tbl_board pk_board) */ 
+						rownum rn, boardno, title, nickname, 
+						case
+							when regdate >= sysdate - interval '1' hour then to_char(regdate, 'HH24:MI:SS')
+							else to_char(regdate, 'yyyy/MM/dd')
+						end as regdate,
+						case
+							when regdate >= sysdate - interval '1' hour then 'new'
+							else ''
+						end as newWrite,
+						likes, views, replyCount
+					from tbl_board where boardtypeno = #{boardtypeno}
+						<if test="type != null">
+							
+							<trim prefix="and(" suffix=")" prefixOverrides="or">
+								<foreach item="type" collection="typeArr">
+									<trim prefix="or">
+										<choose>
+											<when test="type == 'T'.toString()">
+												title like '%' || #{keyword} || '%'
+											</when>
+											<when test="type == 'W'.toString()">
+												nickname like '%' || #{keyword} || '%'
+											</when>
+											<when test="type == 'C'.toString()">
+												content like '%' || #{keyword} || '%'
+											</when>
+										</choose>
+									</trim>				
+								</foreach>
+							</trim>
+						</if>
+				    	and rownum &lt;= #{pageNum} * #{amount}) 
+			where rn &gt; (#{pageNum} - 1) * #{amount} 
+	</select>
+	<!--  where boardtype = #{boardtype}  -->
+	
+	<!-- 게시글 상세정보 가져오기 -->
+	<select id="getDetail" resultType="BoardDetailDto">
+		select a.boardno, a.title, a.content, a.userid, a.nickname, a.regdate, a.updatedate, a.likes, a.views, a.boardtypeno, b.boardtype
+               from tbl_board a, tbl_board_type b 
+               where a.boardtypeno = b.boardtypeno and a.boardno = #{boadrno}
+<!-- 		select boardno, title, content, userid, nickname, regdate, updatedate, -->
+<!-- 		 	   likes, views, boardtype -->
+<!-- 		from tbl_board  -->
+<!-- 		where boardno = #{boardno} -->
+	</select>
+	
+	<!-- 게시글 총갯수 가져오기 -->
+	<select id="getAllCount" resultType="int">
+		select count(*)
+		from tbl_board where boardtypeno = #{boardtypeno}
+			
+				<if test="type != null">
+				
+					<trim prefix="and(" suffix=")" prefixOverrides="or">
+						<foreach item="type" collection="typeArr">
+							<trim prefix="or">
+								<choose>
+									<when test="type == 'T'.toString()">
+										title like '%' || #{keyword} || '%'
+									</when>
+									<when test="type == 'W'.toString()">
+										nickname like '%' || #{keyword} || '%'
+									</when>
+									<when test="type == 'C'.toString()">
+										content like '%' || #{keyword} || '%'
+									</when>
+								</choose>
+							</trim>				
+						</foreach>
+					</trim>
+				</if>
+			
+	</select>
+	
+	<!-- 컨텐츠 가져오기 by boardno -->
+	<select id="getContentByBoardno" resultType="string">
+		select content from tbl_board
+		where boardno = #{boardno}
+	</select>
+	
+	<!-- 자게 글 삭제 -->
+	<delete id="delete">
+		delete from tbl_board
+		where boardno = #{boardno}
+	</delete>
+	
+	<!-- 글 수정 -->
+	<update id="update">
+		update tbl_board
+		set title = #{title}, content = #{content}, updatedate = sysdate
+		where boardno = #{boardno}
+	</update>
+	
+	<!-- 조회수 증가 -->
+	<update id="pluseViews">
+		update tbl_board
+		set views = ((select views from tbl_board
+						  where boardno = #{boardno}) + 1)
+		where boardno = #{boardno}
+	</update>
+	<!-- 추천하기 -->
+	<update id="like">
+		update tbl_board
+		set likes  = ((select likes from tbl_board
+						  where boardno = #{boardno}) + 1)
+		where boardno = #{boardno}
+	</update>
+	<select id="checkLike" resultType="int">
+		select likes from tbl_board
+		where boardno = #{boardno}
+	</select>
+	<!-- 댓글수 갱신 -->
+	<update id="updateReplyCount">
+		update tbl_board
+		set replycount = (select count(replyno) from tbl_reply
+		                   where tbl_reply.boardno = tbl_board.boardno)
+		where boardno = #{boardno}
+	</update>
+	
+	
+	<resultMap id="content_clob" type="ClobVo">
+		<result property="content" column="content" jdbcType="CLOB" javaType="string"/>
+	</resultMap>
+	<!-- 어제날자 컨텐츠들 가져오기 -->
+<!-- 	<select id="getYesterdayContents" resultMap="content_clob"> -->
+<!-- 		select content from tbl_board -->
+<!-- 		where trunc(updatedate) = trunc(sysdate-1) and b_f_img = 'Y' -->
+<!-- 	</select> -->
+</mapper>

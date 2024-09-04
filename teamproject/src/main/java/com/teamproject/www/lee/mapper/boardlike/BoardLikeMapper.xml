@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.teamproject.www.lee.mapper.boardlike.BoardLikeMapper">
+	<!-- 좋아요 체크 -->
+	<select id="checkLike" resultType="int">
+		select count(*) from tbl_like
+		where boardno = #{boardno} and userid = #{userid}
+	</select>
+	
+	<!-- 게시글 좋아요 -->
+	<insert id="like">
+		insert into tbl_like(likeno, boardno, userid)
+		values(seq_like.nextval , #{boardno}, #{userid})
+	</insert>
+	
+	<!-- 좋아요 확인 -->
+	<select id="getLikes" resultType="int">
+		select count(*) from tbl_like
+		where boardno = #{boardno}
+	</select>
+	
+ 	<!-- 좋아요 확인 확인 with boardno --> 
+<!-- 	<select id="checkLikeWithBoardno" resultType="int"> -->
+<!-- 		select count(*) from tbl_like -->
+<!-- 		where boardno = #{boardno} -->
+<!-- 	</select> -->
+	
+	<!-- 라이크 삭제 -->
+	<delete id="deleteLike">
+		delete from tbl_like
+		where boardno = #{boardno}
+	</delete>
+	<!-- 내 라이크 삭제 -->
+	<delete id="deleteMyLike">
+		delete from tbl_like
+		where boardno = #{boardno} and userid = #{userid}
+	</delete>
+</mapper>

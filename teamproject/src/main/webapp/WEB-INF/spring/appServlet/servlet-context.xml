@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<mvc:annotation-driven/>
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<!-- form에서 enctype="multipart/form-data" 로 들어오는 요청 -->
+	<beans:bean
+		id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="defaultEncoding" value="utf-8"/>
+		<beans:property name="maxUploadSize" value="10000000"/> <!-- 10M -->
+		<beans:property name="maxUploadSizePerFile" value="2000000"/> <!-- 2M -->
+		<beans:property name="uploadTempDir" value="file:/D:/upload/tmp"/>
+		<beans:property name="maxInMemorySize" value="10000000"/> <!-- 10M -->
+	</beans:bean>
+	
+	 <!-- Controller 패키지 스캔 설정 -->
+	
+	<context:component-scan base-package="com.teamproject.www.jang.controller" />
+	<context:component-scan base-package="com.teamproject.www.lee.controller" />
+	<context:component-scan base-package="com.teamproject.www.kim.controller" />
+	<context:component-scan base-package="com.teamproject.www.common.controller" />
+	
+	<beans:bean id="loginInterceptor" class="com.teamproject.www.lee.interceptor.LoginInterceptor"/>
+	<beans:bean id="authInterceptor" class="com.teamproject.www.lee.interceptor.AuthInterceptor"/>
+	<beans:bean id="unAuthInterceptor" class="com.teamproject.www.lee.interceptor.UnAuthInterceptor"/>
+	<beans:bean id="jangLoginInterceptor" class="com.teamproject.www.jang.interceptor.LoginInterceptor"/>
+	<beans:bean id="adminInterceptor" class="com.teamproject.www.common.interceptor.AdminInterceptor"/>
+	
+	<!-- interceptor -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/lee/user/loginRun"/>
+			<beans:ref bean="loginInterceptor"/>
+		</mvc:interceptor>
+		
+		<mvc:interceptor>
+		    <!-- /* 매핑하면 ckEditor로 이미지 못불러오는 경우가 생기는듯 -->
+		    <!-- 로그인 안했을때 접근금지 -->
+			<mvc:mapping path="/lee/board/**"/>
+			<mvc:mapping path="/lee/upload/**"/>
+			<mvc:mapping path="/lee/chataverse/**"/>
+			<mvc:mapping path="/lee/user/profile"/>
+			<mvc:mapping path="/lee/user/profile/**"/>
+			<!-- 로그인 안해도 접근 가능 -->
+			<mvc:exclude-mapping path="/lee/board/list/**"/>
+			<mvc:exclude-mapping path="/lee/board/detail/**"/>
+			<mvc:exclude-mapping path="/lee/board/reply/list/*"/>
+			<mvc:exclude-mapping path="/lee/upload/display/**"/>
+			<mvc:exclude-mapping path="/lee/chataverse/itemshop"/>
+			<beans:ref bean="authInterceptor"/>
+		</mvc:interceptor>
+		
+		<mvc:interceptor>
+			<!-- 로그인 했을때 접근금지 --> 
+			<mvc:mapping path="/lee/user/login"/>
+<!-- 			<mapping path="/lee/user/checkUser"/> -->
+			<mvc:mapping path="/lee/user/loginRun"/>
+<!-- 			<mapping path="/lee/user/updatePassword"/> -->
+			<mvc:mapping path="/lee/user/join"/>
+			<mvc:mapping path="/lee/user/joinRun"/>
+			<mvc:mapping path="/lee/user/forgot-id"/>
+			<mvc:mapping path="/lee/user/forgot-password"/>
+			<mvc:mapping path="/lee/user/findId"/>
+<!-- 			<mapping path="/lee/user/resetPassword"/> -->
+			<beans:ref bean="unAuthInterceptor"/>
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/jang/board/notice/postForm"/>
+			<mvc:mapping path="/jang/metaverse/*"/>
+			<beans:ref bean="jangLoginInterceptor"/>
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/*"/>
+			<mvc:mapping path="/jang/board/notice/postFrom*"/>
+			<mvc:mapping path="/jang/board/notice/post*"/>
+			<mvc:mapping path="/jang/board/notice/modify*"/>
+			<beans:ref bean="adminInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	 <!-- 정적 리소스 핸들러 설정 -->
+    <mvc:resources mapping="/resources/lee/js/**" location="/resources/lee/js/" cache-period="0">
+        <mvc:cache-control cache-private="true" max-age="0" must-revalidate="true"/>
+    </mvc:resources>
+</beans:beans>
